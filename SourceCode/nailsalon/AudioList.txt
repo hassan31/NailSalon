@@ -1,0 +1,6 @@
+
+/nailsalon/Sounds/BCrutchfield - Peaceful Video Game Loop.mp3
+/nailsalon/Sounds/CompletedDishMusic_CF.wav
+/nailsalon/Sounds/General_UIButtonSound_MS.caf
+/nailsalon/Sounds/Magic Wand Noise-SoundBible.com-375928671.mp3
+/nailsalon/Sounds/magic-chime-06.mp3

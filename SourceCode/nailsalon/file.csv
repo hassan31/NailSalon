@@ -1,0 +1,558 @@
+ /Default-568h@2x.png , 640 , 1136 
+ /Default-Portrait@2x~ipad.png , 768 , 1024 
+ /Default-Portrait~ipad.png , 768 , 1024 
+ /Default.png , 320 , 480 
+ /Default@2x.png , 640 , 960 
+ /Icon-120.png , 120 , 120 
+ /Icon-144.png , 144 , 144 
+ /Icon-152.png , 152 , 152 
+ /Icon-72.png , 72 , 72 
+ /Icon-76.png , 76 , 76 
+ /Icon.png , 57 , 57 
+ /Icon@2x.png , 114 , 114 
+ /nailsalon/Icon-120.png , 120 , 120 
+ /nailsalon/Icon-152.png , 152 , 152 
+ /nailsalon/Icon-76.png , 76 , 76 
+ /nailsalon/resources/3g/ApplyOne.png , 51 , 51 
+ /nailsalon/resources/3g/ApplyOne@2x.png , 100 , 100 
+ /nailsalon/resources/3g/ApplyOne~ipad.png , 111 , 111 
+ /nailsalon/resources/3g/back.png , 70 , 70 
+ /nailsalon/resources/3g/backgroundMenu.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/1.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/10.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/2.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/3.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/4.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/5.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/6.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/7.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/8.png , 320 , 480 
+ /nailsalon/resources/3g/backgrounds 3g/9.png , 320 , 480 
+ /nailsalon/resources/3g/cancel.png , 33 , 32 
+ /nailsalon/resources/3g/extrass/x1.png , 63 , 63 
+ /nailsalon/resources/3g/extrass/x10.png , 65 , 56 
+ /nailsalon/resources/3g/extrass/x11.png , 21 , 62 
+ /nailsalon/resources/3g/extrass/x12.png , 59 , 59 
+ /nailsalon/resources/3g/extrass/x13.png , 74 , 76 
+ /nailsalon/resources/3g/extrass/x14.png , 57 , 57 
+ /nailsalon/resources/3g/extrass/x15.png , 61 , 68 
+ /nailsalon/resources/3g/extrass/x16.png , 60 , 63 
+ /nailsalon/resources/3g/extrass/x17.png , 80 , 80 
+ /nailsalon/resources/3g/extrass/x18.png , 65 , 68 
+ /nailsalon/resources/3g/extrass/x19.png , 51 , 51 
+ /nailsalon/resources/3g/extrass/x2.png , 64 , 40 
+ /nailsalon/resources/3g/extrass/x20.png , 70 , 70 
+ /nailsalon/resources/3g/extrass/x21.png , 50 , 50 
+ /nailsalon/resources/3g/extrass/x3.png , 61 , 63 
+ /nailsalon/resources/3g/extrass/x4.png , 48 , 48 
+ /nailsalon/resources/3g/extrass/x5.png , 40 , 38 
+ /nailsalon/resources/3g/extrass/x6.png , 57 , 65 
+ /nailsalon/resources/3g/extrass/x7.png , 48 , 62 
+ /nailsalon/resources/3g/extrass/x8.png , 78 , 60 
+ /nailsalon/resources/3g/extrass/x9.png , 51 , 45 
+ /nailsalon/resources/3g/extrass.png , 50 , 50 
+ /nailsalon/resources/3g/forw.png , 143 , 143 
+ /nailsalon/resources/3g/galleryback.png , 320 , 480 
+ /nailsalon/resources/3g/gloss.png , 50 , 50 
+ /nailsalon/resources/3g/lockSmall.png , 28 , 39 
+ /nailsalon/resources/3g/paint.png , 50 , 50 
+ /nailsalon/resources/3g/patterns.png , 50 , 50 
+ /nailsalon/resources/3g/photo.png , 294 , 414 
+ /nailsalon/resources/3g/play.png , 112 , 112 
+ /nailsalon/resources/3g/return.png , 90 , 75 
+ /nailsalon/resources/3g/select.png , 300 , 44 
+ /nailsalon/resources/3g/tips.png , 50 , 50 
+ /nailsalon/resources/3g/undo.png , 60 , 64 
+ /nailsalon/resources/ipad/backgroundMenu~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/10~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/1~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/2~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/3~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/4~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/5~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/6~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/7~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/8~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/backgrounds ipad/9~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/galleryback~ipad.png , 768 , 1024 
+ /nailsalon/resources/ipad/photo~ipad.png , 636 , 896 
+ /nailsalon/resources/ipad/play~ipad.png , 264 , 264 
+ /nailsalon/resources/iphone5/backgroundMenu_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/10_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/1_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/2_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/3_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/4_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/5_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/6_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/7_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/8_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/backgrounds iphone 5/9_568.png , 640 , 1136 
+ /nailsalon/resources/iphone5/galleryback_568.png , 640 , 1136 
+ /nailsalon/resources/More screen/back_more~ipad.png , 95 , 79 
+ /nailsalon/resources/More screen/backMore.png , 38 , 33 
+ /nailsalon/resources/More screen/backMore@2x.png , 95 , 81 
+ /nailsalon/resources/More screen/bars.png , 320 , 480 
+ /nailsalon/resources/More screen/bars@2x.png , 640 , 960 
+ /nailsalon/resources/More screen/bars_568.png , 640 , 1136 
+ /nailsalon/resources/More screen/bars~ipad.png , 768 , 1024 
+ /nailsalon/resources/More screen/blankStar.png , 265 , 58 
+ /nailsalon/resources/More screen/blankStar@2x.png , 531 , 116 
+ /nailsalon/resources/More screen/blankStarB.png , 58 , 58 
+ /nailsalon/resources/More screen/blankStarB@2x.png , 116 , 116 
+ /nailsalon/resources/More screen/blankStarB~ipad.png , 116 , 116 
+ /nailsalon/resources/More screen/blankStarY.png , 58 , 58 
+ /nailsalon/resources/More screen/blankStarY@2x.png , 116 , 116 
+ /nailsalon/resources/More screen/blankStarY~ipad.png , 116 , 116 
+ /nailsalon/resources/More screen/blankStar~ipad.png , 531 , 116 
+ /nailsalon/resources/More screen/CollectThem.png , 206 , 52 
+ /nailsalon/resources/More screen/CollectThem@2x.png , 412 , 103 
+ /nailsalon/resources/More screen/CollectThem~ipad.png , 509 , 128 
+ /nailsalon/resources/More screen/freeApp.png , 225 , 55 
+ /nailsalon/resources/More screen/freeApp@2x.png , 550 , 135 
+ /nailsalon/resources/More screen/freeApp~ipad.png , 582 , 143 
+ /nailsalon/resources/More screen/moreBackr.png , 320 , 480 
+ /nailsalon/resources/More screen/moreBackr@2x.png , 640 , 960 
+ /nailsalon/resources/More screen/moreBackr_568.png , 640 , 1136 
+ /nailsalon/resources/More screen/moreBackr~ipad.png , 768 , 1024 
+ /nailsalon/resources/More screen/rate.png , 320 , 144 
+ /nailsalon/resources/More screen/rate@2x.png , 640 , 287 
+ /nailsalon/resources/More screen/rate~ipad.png , 788 , 353 
+ /nailsalon/resources/More screen/ray.png , 319 , 319 
+ /nailsalon/resources/More screen/ray@2x.png , 638 , 638 
+ /nailsalon/resources/More screen/ray~ipad.png , 638 , 638 
+ /nailsalon/resources/nails/3g/colors/nailC1.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC10.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC11.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC12.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC13.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC14.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC15.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC16.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC17.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC18.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC19.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC2.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC20.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC3.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC4.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC5.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC6.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC7.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC8.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/nailC9.png , 151 , 274 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC1.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC10.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC11.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC12.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC13.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC14.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC15.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC16.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC17.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC18.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC19.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC2.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC20.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC3.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC4.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC5.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC6.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC7.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC8.png , 25 , 45 
+ /nailsalon/resources/nails/3g/colors/small/smallnailC9.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/nailG1.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG10.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG11.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG12.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG13.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG14.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG15.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG16.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG17.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG18.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG19.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG2.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG20.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG3.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG4.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG5.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG6.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG7.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG8.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/nailG9.png , 151 , 274 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG1.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG10.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG11.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG12.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG13.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG14.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG15.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG16.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG17.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG18.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG19.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG2.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG20.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG3.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG4.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG5.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG6.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG7.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG8.png , 25 , 45 
+ /nailsalon/resources/nails/3g/gloss/small/smallnailG9.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/nailP1.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP10.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP11.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP12.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP13.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP14.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP15.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP16.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP17.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP18.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP19.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP2.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP20.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP3.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP4.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP5.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP6.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP7.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP8.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/nailP9.png , 151 , 274 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP1.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP10.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP11.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP12.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP13.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP14.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP15.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP16.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP17.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP18.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP19.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP2.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP20.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP3.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP4.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP5.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP6.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP7.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP8.png , 25 , 45 
+ /nailsalon/resources/nails/3g/patterns/small/smallnailP9.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/nailT1.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT10.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT11.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT12.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT13.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT14.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT15.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT16.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT17.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT18.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT19.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT2.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT20.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT3.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT4.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT5.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT6.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT7.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT8.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/nailT9.png , 151 , 274 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT1.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT10.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT11.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT12.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT13.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT14.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT15.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT16.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT17.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT18.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT19.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT2.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT20.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT3.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT4.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT5.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT6.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT7.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT8.png , 25 , 45 
+ /nailsalon/resources/nails/3g/tips/small/smallnailT9.png , 25 , 45 
+ /nailsalon/resources/nails/retina/colors/nailC10@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC11@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC12@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC13@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC14@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC15@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC16@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC17@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC18@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC19@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC1@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC20@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC2@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC3@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC4@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC5@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC6@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC7@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC8@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/nailC9@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC10@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC11@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC12@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC13@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC14@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC15@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC16@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC17@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC18@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC19@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC1@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC20@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC2@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC3@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC4@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC5@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC6@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC7@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC8@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/colors/small/smallnailC9@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/nailG10@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG11@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG12@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG13@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG14@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG15@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG16@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG17@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG18@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG19@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG1@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG20@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG2@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG3@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG4@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG5@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG6@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG7@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG8@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/nailG9@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG10@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG11@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG12@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG13@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG14@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG15@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG16@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG17@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG18@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG19@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG1@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG20@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG2@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG3@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG4@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG5@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG6@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG7@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG8@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/gloss/small/smallnailG9@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/nailP10@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP11@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP12@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP13@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP14@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP15@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP16@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP17@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP18@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP19@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP1@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP20@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP2@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP3@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP4@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP5@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP6@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP7@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP8@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/nailP9@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP10@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP11@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP12@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP13@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP14@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP15@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP16@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP17@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP18@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP19@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP1@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP20@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP2@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP3@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP4@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP5@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP6@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP7@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP8@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/patterns/small/smallnailP9@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/nailT10@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT11@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT12@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT13@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT14@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT15@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT16@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT17@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT18@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT19@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT1@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT20@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT2@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT3@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT4@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT5@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT6@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT7@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT8@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/nailT9@2x.png , 302 , 549 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT10@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT11@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT12@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT13@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT14@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT15@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT16@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT17@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT18@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT19@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT1@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT20@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT2@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT3@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT4@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT5@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT6@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT7@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT8@2x.png , 50 , 91 
+ /nailsalon/resources/nails/retina/tips/small/smallnailT9@2x.png , 50 , 91 
+ /nailsalon/resources/Privacy/PrivacyPolicy.png , 99 , 105 
+ /nailsalon/resources/retina/back@2x.png , 143 , 143 
+ /nailsalon/resources/retina/backgroundMenu@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/10@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/1@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/2@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/3@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/4@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/5@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/6@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/7@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/8@2x.png , 640 , 960 
+ /nailsalon/resources/retina/backgrounds retina/9@2x.png , 640 , 960 
+ /nailsalon/resources/retina/cancel@2x.png , 66 , 65 
+ /nailsalon/resources/retina/extrass/x10@2x.png , 156 , 136 
+ /nailsalon/resources/retina/extrass/x11@2x.png , 51 , 150 
+ /nailsalon/resources/retina/extrass/x12@2x.png , 142 , 142 
+ /nailsalon/resources/retina/extrass/x13@2x.png , 177 , 182 
+ /nailsalon/resources/retina/extrass/x14@2x.png , 137 , 137 
+ /nailsalon/resources/retina/extrass/x15@2x.png , 147 , 162 
+ /nailsalon/resources/retina/extrass/x16@2x.png , 144 , 153 
+ /nailsalon/resources/retina/extrass/x17@2x.png , 192 , 192 
+ /nailsalon/resources/retina/extrass/x18@2x.png , 157 , 161 
+ /nailsalon/resources/retina/extrass/x19@2x.png , 124 , 124 
+ /nailsalon/resources/retina/extrass/x1@2x.png , 134 , 134 
+ /nailsalon/resources/retina/extrass/x20@2x.png , 167 , 167 
+ /nailsalon/resources/retina/extrass/x21@2x.png , 118 , 120 
+ /nailsalon/resources/retina/extrass/x2@2x.png , 154 , 96 
+ /nailsalon/resources/retina/extrass/x3@2x.png , 146 , 152 
+ /nailsalon/resources/retina/extrass/x4@2x.png , 116 , 116 
+ /nailsalon/resources/retina/extrass/x5@2x.png , 95 , 91 
+ /nailsalon/resources/retina/extrass/x6@2x.png , 135 , 156 
+ /nailsalon/resources/retina/extrass/x7@2x.png , 115 , 148 
+ /nailsalon/resources/retina/extrass/x8@2x.png , 188 , 145 
+ /nailsalon/resources/retina/extrass/x9@2x.png , 122 , 106 
+ /nailsalon/resources/retina/extrass@2x.png , 102 , 102 
+ /nailsalon/resources/retina/forw@2x.png , 143 , 143 
+ /nailsalon/resources/retina/galleryback@2x.png , 640 , 960 
+ /nailsalon/resources/retina/gloss@2x.png , 102 , 102 
+ /nailsalon/resources/retina/lockSmall@2x.png , 56 , 79 
+ /nailsalon/resources/retina/paint@2x.png , 102 , 102 
+ /nailsalon/resources/retina/patterns@2x.png , 102 , 102 
+ /nailsalon/resources/retina/photo@2x.png , 587 , 827 
+ /nailsalon/resources/retina/play@2x.png , 222 , 224 
+ /nailsalon/resources/retina/return@2x.png , 118 , 98 
+ /nailsalon/resources/retina/select@2x.png , 600 , 88 
+ /nailsalon/resources/retina/tips@2x.png , 102 , 102 
+ /nailsalon/resources/retina/undo@2x.png , 112 , 119 
+ /nailsalon/resources/updates/3g/background.png , 50 , 50 
+ /nailsalon/resources/updates/3g/finger color/finger1.png , 192 , 255 
+ /nailsalon/resources/updates/3g/finger color/finger2.png , 192 , 255 
+ /nailsalon/resources/updates/3g/finger color/finger3.png , 192 , 255 
+ /nailsalon/resources/updates/3g/finger color/finger4.png , 192 , 255 
+ /nailsalon/resources/updates/3g/hand color/hand1.png , 330 , 416 
+ /nailsalon/resources/updates/3g/hand color/hand2.png , 330 , 416 
+ /nailsalon/resources/updates/3g/hand color/hand3.png , 330 , 416 
+ /nailsalon/resources/updates/3g/hand color/hand4.png , 330 , 416 
+ /nailsalon/resources/updates/3g/handColor.png , 50 , 50 
+ /nailsalon/resources/updates/3g/home.png , 66 , 66 
+ /nailsalon/resources/updates/3g/save.png , 66 , 66 
+ /nailsalon/resources/updates/3g/selected/background2.png , 50 , 50 
+ /nailsalon/resources/updates/3g/selected/extrass2.png , 50 , 50 
+ /nailsalon/resources/updates/3g/selected/gloss2.png , 50 , 50 
+ /nailsalon/resources/updates/3g/selected/handColor2.png , 50 , 50 
+ /nailsalon/resources/updates/3g/selected/paint2.png , 50 , 50 
+ /nailsalon/resources/updates/3g/selected/patterns2.png , 50 , 50 
+ /nailsalon/resources/updates/3g/selected/tips2.png , 50 , 50 
+ /nailsalon/resources/updates/3g/share.png , 66 , 66 
+ /nailsalon/resources/updates/3g/unlock.png , 94 , 99 
+ /nailsalon/resources/updates/3g/unlockSparkle.png , 80 , 80 
+ /nailsalon/resources/updates/ApplyAll.png , 51 , 51 
+ /nailsalon/resources/updates/ApplyAll@2x.png , 100 , 100 
+ /nailsalon/resources/updates/ApplyAll~ipad.png , 111 , 111 
+ /nailsalon/resources/updates/gallery.png , 80 , 139 
+ /nailsalon/resources/updates/gallery@2x.png , 163 , 283 
+ /nailsalon/resources/updates/gallery~ipad.png , 163 , 283 
+ /nailsalon/resources/updates/gold_left.png , 49 , 24 
+ /nailsalon/resources/updates/gold_left@2x.png , 113 , 55 
+ /nailsalon/resources/updates/gold_left~ipad.png , 120 , 58 
+ /nailsalon/resources/updates/gold_right.png , 49 , 24 
+ /nailsalon/resources/updates/gold_right@2x.png , 113 , 55 
+ /nailsalon/resources/updates/gold_right~ipad.png , 120 , 58 
+ /nailsalon/resources/updates/more.png , 80 , 139 
+ /nailsalon/resources/updates/more@2x.png , 163 , 283 
+ /nailsalon/resources/updates/more~ipad.png , 163 , 283 
+ /nailsalon/resources/updates/restore.png , 70 , 41 
+ /nailsalon/resources/updates/restore@2x.png , 140 , 81 
+ /nailsalon/resources/updates/retina/background@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/finger color/finger1@2x.png , 385 , 512 
+ /nailsalon/resources/updates/retina/finger color/finger2@2x.png , 385 , 512 
+ /nailsalon/resources/updates/retina/finger color/finger3@2x.png , 385 , 512 
+ /nailsalon/resources/updates/retina/finger color/finger4@2x.png , 385 , 512 
+ /nailsalon/resources/updates/retina/hand color/hand1@2x.png , 661 , 833 
+ /nailsalon/resources/updates/retina/hand color/hand2@2x.png , 661 , 833 
+ /nailsalon/resources/updates/retina/hand color/hand3@2x.png , 661 , 833 
+ /nailsalon/resources/updates/retina/hand color/hand4@2x.png , 661 , 833 
+ /nailsalon/resources/updates/retina/handColor@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/home@2x.png , 132 , 132 
+ /nailsalon/resources/updates/retina/save@2x.png , 132 , 132 
+ /nailsalon/resources/updates/retina/selected/background2@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/selected/extrass2@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/selected/gloss2@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/selected/handColor2@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/selected/paint2@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/selected/patterns2@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/selected/tips2@2x.png , 102 , 102 
+ /nailsalon/resources/updates/retina/share@2x.png , 132 , 132 
+ /nailsalon/resources/updates/retina/unlock@2x.png , 198 , 209 
+ /nailsalon/resources/updates/retina/unlockSparkle@2x.png , 176 , 176 
+ /nailsalon/resources/updates/spark.png , 59 , 59 
+ /nailsalon/resources/updates/store.png , 80 , 139 
+ /nailsalon/resources/updates/store@2x.png , 163 , 283 
+ /nailsalon/resources/updates/store~ipad.png , 163 , 283 
+ /nailsalon/resources/updates/white-star.png , 100 , 95 
+ 
