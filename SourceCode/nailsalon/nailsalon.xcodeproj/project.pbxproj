@@ -7,22 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28312AE71802E69B00FBE04A /* PrivacyPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28312AE51802E69B00FBE04A /* PrivacyPolicy.m */; };
-		28312AE81802E69B00FBE04A /* PrivacyPolicy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28312AE61802E69B00FBE04A /* PrivacyPolicy.xib */; };
 		28312AED1802E6C500FBE04A /* Privacy Policy.html in Resources */ = {isa = PBXBuildFile; fileRef = 28312AEA1802E6C500FBE04A /* Privacy Policy.html */; };
 		28312AEE1802E6C500FBE04A /* privacy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 28312AEB1802E6C500FBE04A /* privacy.txt */; };
 		28312AEF1802E6C500FBE04A /* PrivacyPolicy.png in Resources */ = {isa = PBXBuildFile; fileRef = 28312AEC1802E6C500FBE04A /* PrivacyPolicy.png */; };
 		28312AF31802E8DF00FBE04A /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 28312AF01802E8DF00FBE04A /* Icon-76.png */; };
 		28312AF41802E8DF00FBE04A /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 28312AF11802E8DF00FBE04A /* Icon-120.png */; };
 		28312AF51802E8DF00FBE04A /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 28312AF21802E8DF00FBE04A /* Icon-152.png */; };
-		650893C8173C1EE600336485 /* FreeAppOfTheDAy.m in Sources */ = {isa = PBXBuildFile; fileRef = 650893BE173C1EE600336485 /* FreeAppOfTheDAy.m */; };
-		650893C9173C1EE600336485 /* MoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 650893C0173C1EE600336485 /* MoreItem.m */; };
-		650893CA173C1EE600336485 /* MoreViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650893C1173C1EE600336485 /* MoreViewController-5.xib */; };
-		650893CB173C1EE600336485 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650893C3173C1EE600336485 /* MoreViewController.m */; };
-		650893CC173C1EE600336485 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650893C4173C1EE600336485 /* MoreViewController.xib */; };
-		650893CD173C1EE600336485 /* MoreViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650893C5173C1EE600336485 /* MoreViewController~ipad.xib */; };
-		650893CE173C1EE600336485 /* XmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 650893C7173C1EE600336485 /* XmlParser.m */; };
-		650893D2173C1EEA00336485 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 650893D1173C1EEA00336485 /* Reachability.m */; };
 		650893F7173C1FCA00336485 /* back_more~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 650893D4173C1FCA00336485 /* back_more~ipad.png */; };
 		650893F8173C1FCA00336485 /* backMore.png in Resources */ = {isa = PBXBuildFile; fileRef = 650893D5173C1FCA00336485 /* backMore.png */; };
 		650893F9173C1FCA00336485 /* backMore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650893D6173C1FCA00336485 /* backMore@2x.png */; };
@@ -52,16 +42,11 @@
 		65089414173C1FCA00336485 /* ray.png in Resources */ = {isa = PBXBuildFile; fileRef = 650893F1173C1FCA00336485 /* ray.png */; };
 		65089415173C1FCA00336485 /* ray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 650893F2173C1FCA00336485 /* ray@2x.png */; };
 		65089416173C1FCA00336485 /* ray~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 650893F3173C1FCA00336485 /* ray~ipad.png */; };
-		6508941D173C200800336485 /* NailFinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6508941B173C200800336485 /* NailFinalViewController.m */; };
-		6508941E173C200800336485 /* NailFinalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6508941C173C200800336485 /* NailFinalViewController.xib */; };
 		65708B201739815D00F5F784 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65708B1F1739815D00F5F784 /* UIKit.framework */; };
 		65708B221739815D00F5F784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65708B211739815D00F5F784 /* Foundation.framework */; };
 		65708B241739815D00F5F784 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65708B231739815D00F5F784 /* CoreGraphics.framework */; };
 		65708B2A1739815D00F5F784 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65708B281739815D00F5F784 /* InfoPlist.strings */; };
 		65708B2C1739815D00F5F784 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65708B2B1739815D00F5F784 /* main.m */; };
-		65708B301739815D00F5F784 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65708B2F1739815D00F5F784 /* AppDelegate.m */; };
-		65708B401739828F00F5F784 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65708B3E1739828F00F5F784 /* MenuViewController.m */; };
-		65708B411739828F00F5F784 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65708B3F1739828F00F5F784 /* MenuViewController.xib */; };
 		65708D27173982E100F5F784 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708B44173982E000F5F784 /* back.png */; };
 		65708D28173982E100F5F784 /* backgroundMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708B45173982E000F5F784 /* backgroundMenu.png */; };
 		65708D29173982E100F5F784 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708B47173982E000F5F784 /* 1.png */; };
@@ -257,8 +242,6 @@
 		65708EEA173982E100F5F784 /* select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708D23173982E100F5F784 /* select@2x.png */; };
 		65708EEC173982E100F5F784 /* tips@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708D25173982E100F5F784 /* tips@2x.png */; };
 		65708EED173982E100F5F784 /* undo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708D26173982E100F5F784 /* undo@2x.png */; };
-		65708EF3173983F500F5F784 /* NailDecorateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65708EF1173983F500F5F784 /* NailDecorateViewController.m */; };
-		65708EF4173983F500F5F784 /* NailDecorateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65708EF2173983F500F5F784 /* NailDecorateViewController.xib */; };
 		65708F091739903600F5F784 /* nailT1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708EF51739903500F5F784 /* nailT1@2x.png */; };
 		65708F0A1739903600F5F784 /* nailT2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708EF61739903500F5F784 /* nailT2@2x.png */; };
 		65708F0B1739903600F5F784 /* nailT3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65708EF71739903500F5F784 /* nailT3@2x.png */; };
@@ -516,8 +499,6 @@
 		65D8743A17ABAA7C00BD8EA8 /* ApplyOne.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D8743717ABAA7C00BD8EA8 /* ApplyOne.png */; };
 		65D8743B17ABAA7C00BD8EA8 /* ApplyOne@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D8743817ABAA7C00BD8EA8 /* ApplyOne@2x.png */; };
 		65D8743C17ABAA7C00BD8EA8 /* ApplyOne~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D8743917ABAA7C00BD8EA8 /* ApplyOne~ipad.png */; };
-		65E2A5A5173CDA51005D368D /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E2A5A3173CDA51005D368D /* AlbumViewController.m */; };
-		65E2A5A6173CDA51005D368D /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5A4173CDA51005D368D /* AlbumViewController.xib */; };
 		65E2A5AD173CDB59005D368D /* gold_right~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5A7173CDB59005D368D /* gold_right~ipad.png */; };
 		65E2A5AE173CDB59005D368D /* gold_left~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5A8173CDB59005D368D /* gold_left~ipad.png */; };
 		65E2A5AF173CDB59005D368D /* gold_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5A9173CDB59005D368D /* gold_right@2x.png */; };
@@ -525,14 +506,6 @@
 		65E2A5B1173CDB59005D368D /* gold_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5AB173CDB59005D368D /* gold_right.png */; };
 		65E2A5B2173CDB59005D368D /* gold_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5AC173CDB59005D368D /* gold_left.png */; };
 		65E2A5B4173D1923005D368D /* white-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5B3173D1923005D368D /* white-star.png */; };
-		65E2A5B7173D2CC5005D368D /* MenuViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5B5173D2CC3005D368D /* MenuViewController-5.xib */; };
-		65E2A5B8173D2CC5005D368D /* MenuViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5B6173D2CC4005D368D /* MenuViewController~ipad.xib */; };
-		65E2A5BB173D2E61005D368D /* NailDecorateViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5B9173D2E60005D368D /* NailDecorateViewController-5.xib */; };
-		65E2A5BC173D2E61005D368D /* NailDecorateViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5BA173D2E61005D368D /* NailDecorateViewController~ipad.xib */; };
-		65E2A5BF173D3B84005D368D /* NailFinalViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5BD173D3B83005D368D /* NailFinalViewController-5.xib */; };
-		65E2A5C0173D3B84005D368D /* NailFinalViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5BE173D3B83005D368D /* NailFinalViewController~ipad.xib */; };
-		65E2A5C3173D3F8B005D368D /* AlbumViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5C1173D3F8A005D368D /* AlbumViewController-5.xib */; };
-		65E2A5C4173D3F8B005D368D /* AlbumViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E2A5C2173D3F8A005D368D /* AlbumViewController~ipad.xib */; };
 		65EA7483174A257C00A79587 /* restore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EA7482174A257C00A79587 /* restore@2x.png */; };
 		65EA7485174A258000A79587 /* restore.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EA7484174A258000A79587 /* restore.png */; };
 		65F354871743A9C900B9E376 /* rate.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F354841743A9C900B9E376 /* rate.png */; };
@@ -595,7 +568,6 @@
 		65FE66C9173A66FB0067CD40 /* paint2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FE66C2173A66FB0067CD40 /* paint2@2x.png */; };
 		65FE66CA173A66FB0067CD40 /* patterns2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FE66C3173A66FB0067CD40 /* patterns2@2x.png */; };
 		65FE66CB173A66FB0067CD40 /* tips2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FE66C4173A66FB0067CD40 /* tips2@2x.png */; };
-		65FEB875173B9A680048E65D /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FEB871173B9A680048E65D /* StoreViewController.m */; };
 		65FEB879173BA1DE0048E65D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FEB878173BA1DE0048E65D /* AVFoundation.framework */; };
 		65FEB87B173BA2C50048E65D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FEB87A173BA2C50048E65D /* StoreKit.framework */; };
 		65FEB87F173BA3B70048E65D /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FEB87E173BA3B70048E65D /* RevMobAds.framework */; };
@@ -611,34 +583,48 @@
 		65FEB8BB173BC79C0048E65D /* magic-chime-06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65FEB8B7173BC79C0048E65D /* magic-chime-06.mp3 */; };
 		65FEB8BD173BD0720048E65D /* unlockSparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FEB8BC173BD0720048E65D /* unlockSparkle.png */; };
 		65FEB8BF173BD07F0048E65D /* unlockSparkle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FEB8BE173BD07F0048E65D /* unlockSparkle@2x.png */; };
+		C3FBAA361B7FF53C002A33EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA011B7FF53C002A33EA /* AppDelegate.m */; };
+		C3FBAA371B7FF53C002A33EA /* HFColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA051B7FF53C002A33EA /* HFColorButton.m */; };
+		C3FBAA381B7FF53C002A33EA /* HFColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA071B7FF53C002A33EA /* HFColorPickerView.m */; };
+		C3FBAA391B7FF53C002A33EA /* AlbumViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA0C1B7FF53C002A33EA /* AlbumViewController-5.xib */; };
+		C3FBAA3A1B7FF53C002A33EA /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA0E1B7FF53C002A33EA /* AlbumViewController.m */; };
+		C3FBAA3B1B7FF53C002A33EA /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA0F1B7FF53C002A33EA /* AlbumViewController.xib */; };
+		C3FBAA3C1B7FF53C002A33EA /* AlbumViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA101B7FF53C002A33EA /* AlbumViewController~ipad.xib */; };
+		C3FBAA3D1B7FF53C002A33EA /* MenuViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA111B7FF53C002A33EA /* MenuViewController-5.xib */; };
+		C3FBAA3E1B7FF53C002A33EA /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA131B7FF53C002A33EA /* MenuViewController.m */; };
+		C3FBAA3F1B7FF53C002A33EA /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA141B7FF53C002A33EA /* MenuViewController.xib */; };
+		C3FBAA401B7FF53C002A33EA /* MenuViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA151B7FF53C002A33EA /* MenuViewController~ipad.xib */; };
+		C3FBAA411B7FF53C002A33EA /* FreeAppOfTheDAy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA181B7FF53C002A33EA /* FreeAppOfTheDAy.m */; };
+		C3FBAA421B7FF53C002A33EA /* MoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA1A1B7FF53C002A33EA /* MoreItem.m */; };
+		C3FBAA431B7FF53C002A33EA /* MoreViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA1B1B7FF53C002A33EA /* MoreViewController-5.xib */; };
+		C3FBAA441B7FF53C002A33EA /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA1D1B7FF53C002A33EA /* MoreViewController.m */; };
+		C3FBAA451B7FF53C002A33EA /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA1E1B7FF53C002A33EA /* MoreViewController.xib */; };
+		C3FBAA461B7FF53C002A33EA /* MoreViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA1F1B7FF53C002A33EA /* MoreViewController~ipad.xib */; };
+		C3FBAA471B7FF53C002A33EA /* XmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA211B7FF53C002A33EA /* XmlParser.m */; };
+		C3FBAA481B7FF53C002A33EA /* NailDecorateViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA221B7FF53C002A33EA /* NailDecorateViewController-5.xib */; };
+		C3FBAA491B7FF53C002A33EA /* NailDecorateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA241B7FF53C002A33EA /* NailDecorateViewController.m */; };
+		C3FBAA4A1B7FF53C002A33EA /* NailDecorateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA251B7FF53C002A33EA /* NailDecorateViewController.xib */; };
+		C3FBAA4B1B7FF53C002A33EA /* NailDecorateViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA261B7FF53C002A33EA /* NailDecorateViewController~ipad.xib */; };
+		C3FBAA4C1B7FF53C002A33EA /* NailFinalViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA271B7FF53C002A33EA /* NailFinalViewController-5.xib */; };
+		C3FBAA4D1B7FF53C002A33EA /* NailFinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA291B7FF53C002A33EA /* NailFinalViewController.m */; };
+		C3FBAA4E1B7FF53C002A33EA /* NailFinalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA2A1B7FF53C002A33EA /* NailFinalViewController.xib */; };
+		C3FBAA4F1B7FF53C002A33EA /* NailFinalViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA2B1B7FF53C002A33EA /* NailFinalViewController~ipad.xib */; };
+		C3FBAA501B7FF53C002A33EA /* PrivacyPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA2E1B7FF53C002A33EA /* PrivacyPolicy.m */; };
+		C3FBAA511B7FF53C002A33EA /* PrivacyPolicy.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA2F1B7FF53C002A33EA /* PrivacyPolicy.xib */; };
+		C3FBAA521B7FF53C002A33EA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA321B7FF53C002A33EA /* Reachability.m */; };
+		C3FBAA531B7FF53C002A33EA /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA351B7FF53C002A33EA /* StoreViewController.m */; };
 		CF8E38D419F7E86D0005BA95 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E38D319F7E86D0005BA95 /* Chartboost.framework */; };
 		CF8E38D619F7EA2C0005BA95 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E38D519F7EA2C0005BA95 /* CoreMedia.framework */; };
 		CF8E38D819F7EB100005BA95 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8E38D719F7EB100005BA95 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28312AE41802E69B00FBE04A /* PrivacyPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyPolicy.h; sourceTree = "<group>"; };
-		28312AE51802E69B00FBE04A /* PrivacyPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyPolicy.m; sourceTree = "<group>"; };
-		28312AE61802E69B00FBE04A /* PrivacyPolicy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyPolicy.xib; sourceTree = "<group>"; };
 		28312AEA1802E6C500FBE04A /* Privacy Policy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Privacy Policy.html"; sourceTree = "<group>"; };
 		28312AEB1802E6C500FBE04A /* privacy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy.txt; sourceTree = "<group>"; };
 		28312AEC1802E6C500FBE04A /* PrivacyPolicy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrivacyPolicy.png; sourceTree = "<group>"; };
 		28312AF01802E8DF00FBE04A /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		28312AF11802E8DF00FBE04A /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		28312AF21802E8DF00FBE04A /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
-		650893BD173C1EE600336485 /* FreeAppOfTheDAy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeAppOfTheDAy.h; sourceTree = "<group>"; };
-		650893BE173C1EE600336485 /* FreeAppOfTheDAy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeAppOfTheDAy.m; sourceTree = "<group>"; };
-		650893BF173C1EE600336485 /* MoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreItem.h; sourceTree = "<group>"; };
-		650893C0173C1EE600336485 /* MoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItem.m; sourceTree = "<group>"; };
-		650893C1173C1EE600336485 /* MoreViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MoreViewController-5.xib"; sourceTree = "<group>"; };
-		650893C2173C1EE600336485 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
-		650893C3173C1EE600336485 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
-		650893C4173C1EE600336485 /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
-		650893C5173C1EE600336485 /* MoreViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MoreViewController~ipad.xib"; sourceTree = "<group>"; };
-		650893C6173C1EE600336485 /* XmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlParser.h; sourceTree = "<group>"; };
-		650893C7173C1EE600336485 /* XmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlParser.m; sourceTree = "<group>"; };
-		650893D0173C1EEA00336485 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		650893D1173C1EEA00336485 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		650893D4173C1FCA00336485 /* back_more~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_more~ipad.png"; sourceTree = "<group>"; };
 		650893D5173C1FCA00336485 /* backMore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backMore.png; sourceTree = "<group>"; };
 		650893D6173C1FCA00336485 /* backMore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backMore@2x.png"; sourceTree = "<group>"; };
@@ -668,9 +654,6 @@
 		650893F1173C1FCA00336485 /* ray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ray.png; sourceTree = "<group>"; };
 		650893F2173C1FCA00336485 /* ray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ray@2x.png"; sourceTree = "<group>"; };
 		650893F3173C1FCA00336485 /* ray~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ray~ipad.png"; sourceTree = "<group>"; };
-		6508941A173C200800336485 /* NailFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NailFinalViewController.h; sourceTree = "<group>"; };
-		6508941B173C200800336485 /* NailFinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NailFinalViewController.m; sourceTree = "<group>"; };
-		6508941C173C200800336485 /* NailFinalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NailFinalViewController.xib; sourceTree = "<group>"; };
 		65708B1C1739815D00F5F784 /* NailSalon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailSalon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65708B1F1739815D00F5F784 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65708B211739815D00F5F784 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -679,11 +662,6 @@
 		65708B291739815D00F5F784 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65708B2B1739815D00F5F784 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65708B2D1739815D00F5F784 /* NailSalon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NailSalon-Prefix.pch"; sourceTree = "<group>"; };
-		65708B2E1739815D00F5F784 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		65708B2F1739815D00F5F784 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		65708B3D1739828F00F5F784 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		65708B3E1739828F00F5F784 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		65708B3F1739828F00F5F784 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		65708B44173982E000F5F784 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		65708B45173982E000F5F784 /* backgroundMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundMenu.png; sourceTree = "<group>"; };
 		65708B47173982E000F5F784 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -879,9 +857,6 @@
 		65708D23173982E100F5F784 /* select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "select@2x.png"; sourceTree = "<group>"; };
 		65708D25173982E100F5F784 /* tips@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips@2x.png"; sourceTree = "<group>"; };
 		65708D26173982E100F5F784 /* undo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo@2x.png"; sourceTree = "<group>"; };
-		65708EF0173983F500F5F784 /* NailDecorateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NailDecorateViewController.h; sourceTree = "<group>"; };
-		65708EF1173983F500F5F784 /* NailDecorateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NailDecorateViewController.m; sourceTree = "<group>"; };
-		65708EF2173983F500F5F784 /* NailDecorateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NailDecorateViewController.xib; sourceTree = "<group>"; };
 		65708EF51739903500F5F784 /* nailT1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nailT1@2x.png"; sourceTree = "<group>"; };
 		65708EF61739903500F5F784 /* nailT2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nailT2@2x.png"; sourceTree = "<group>"; };
 		65708EF71739903500F5F784 /* nailT3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nailT3@2x.png"; sourceTree = "<group>"; };
@@ -1139,9 +1114,6 @@
 		65D8743717ABAA7C00BD8EA8 /* ApplyOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplyOne.png; sourceTree = "<group>"; };
 		65D8743817ABAA7C00BD8EA8 /* ApplyOne@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplyOne@2x.png"; sourceTree = "<group>"; };
 		65D8743917ABAA7C00BD8EA8 /* ApplyOne~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplyOne~ipad.png"; sourceTree = "<group>"; };
-		65E2A5A2173CDA51005D368D /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
-		65E2A5A3173CDA51005D368D /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
-		65E2A5A4173CDA51005D368D /* AlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
 		65E2A5A7173CDB59005D368D /* gold_right~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold_right~ipad.png"; sourceTree = "<group>"; };
 		65E2A5A8173CDB59005D368D /* gold_left~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold_left~ipad.png"; sourceTree = "<group>"; };
 		65E2A5A9173CDB59005D368D /* gold_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gold_right@2x.png"; sourceTree = "<group>"; };
@@ -1149,14 +1121,6 @@
 		65E2A5AB173CDB59005D368D /* gold_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold_right.png; sourceTree = "<group>"; };
 		65E2A5AC173CDB59005D368D /* gold_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold_left.png; sourceTree = "<group>"; };
 		65E2A5B3173D1923005D368D /* white-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-star.png"; sourceTree = "<group>"; };
-		65E2A5B5173D2CC3005D368D /* MenuViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MenuViewController-5.xib"; sourceTree = "<group>"; };
-		65E2A5B6173D2CC4005D368D /* MenuViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MenuViewController~ipad.xib"; sourceTree = "<group>"; };
-		65E2A5B9173D2E60005D368D /* NailDecorateViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NailDecorateViewController-5.xib"; sourceTree = "<group>"; };
-		65E2A5BA173D2E61005D368D /* NailDecorateViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NailDecorateViewController~ipad.xib"; sourceTree = "<group>"; };
-		65E2A5BD173D3B83005D368D /* NailFinalViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NailFinalViewController-5.xib"; sourceTree = "<group>"; };
-		65E2A5BE173D3B83005D368D /* NailFinalViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NailFinalViewController~ipad.xib"; sourceTree = "<group>"; };
-		65E2A5C1173D3F8A005D368D /* AlbumViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AlbumViewController-5.xib"; sourceTree = "<group>"; };
-		65E2A5C2173D3F8A005D368D /* AlbumViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AlbumViewController~ipad.xib"; sourceTree = "<group>"; };
 		65EA7482174A257C00A79587 /* restore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restore@2x.png"; sourceTree = "<group>"; };
 		65EA7484174A258000A79587 /* restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restore.png; sourceTree = "<group>"; };
 		65F354841743A9C900B9E376 /* rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rate.png; sourceTree = "<group>"; };
@@ -1219,8 +1183,6 @@
 		65FE66C2173A66FB0067CD40 /* paint2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paint2@2x.png"; sourceTree = "<group>"; };
 		65FE66C3173A66FB0067CD40 /* patterns2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "patterns2@2x.png"; sourceTree = "<group>"; };
 		65FE66C4173A66FB0067CD40 /* tips2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tips2@2x.png"; sourceTree = "<group>"; };
-		65FEB870173B9A680048E65D /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
-		65FEB871173B9A680048E65D /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
 		65FEB878173BA1DE0048E65D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		65FEB87A173BA2C50048E65D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		65FEB87E173BA3B70048E65D /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
@@ -1236,7 +1198,51 @@
 		65FEB8B7173BC79C0048E65D /* magic-chime-06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "magic-chime-06.mp3"; sourceTree = "<group>"; };
 		65FEB8BC173BD0720048E65D /* unlockSparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockSparkle.png; sourceTree = "<group>"; };
 		65FEB8BE173BD07F0048E65D /* unlockSparkle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlockSparkle@2x.png"; sourceTree = "<group>"; };
-		A88CFE2118F3E57C00FF40A4 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Defines.h; path = Classes/Defines.h; sourceTree = "<group>"; };
+		C3FBAA001B7FF53C002A33EA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3FBAA011B7FF53C002A33EA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3FBAA041B7FF53C002A33EA /* HFColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFColorButton.h; sourceTree = "<group>"; };
+		C3FBAA051B7FF53C002A33EA /* HFColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFColorButton.m; sourceTree = "<group>"; };
+		C3FBAA061B7FF53C002A33EA /* HFColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFColorPickerView.h; sourceTree = "<group>"; };
+		C3FBAA071B7FF53C002A33EA /* HFColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFColorPickerView.m; sourceTree = "<group>"; };
+		C3FBAA091B7FF53C002A33EA /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		C3FBAA0C1B7FF53C002A33EA /* AlbumViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AlbumViewController-5.xib"; sourceTree = "<group>"; };
+		C3FBAA0D1B7FF53C002A33EA /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		C3FBAA0E1B7FF53C002A33EA /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		C3FBAA0F1B7FF53C002A33EA /* AlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
+		C3FBAA101B7FF53C002A33EA /* AlbumViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AlbumViewController~ipad.xib"; sourceTree = "<group>"; };
+		C3FBAA111B7FF53C002A33EA /* MenuViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MenuViewController-5.xib"; sourceTree = "<group>"; };
+		C3FBAA121B7FF53C002A33EA /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		C3FBAA131B7FF53C002A33EA /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		C3FBAA141B7FF53C002A33EA /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		C3FBAA151B7FF53C002A33EA /* MenuViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MenuViewController~ipad.xib"; sourceTree = "<group>"; };
+		C3FBAA171B7FF53C002A33EA /* FreeAppOfTheDAy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeAppOfTheDAy.h; sourceTree = "<group>"; };
+		C3FBAA181B7FF53C002A33EA /* FreeAppOfTheDAy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeAppOfTheDAy.m; sourceTree = "<group>"; };
+		C3FBAA191B7FF53C002A33EA /* MoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreItem.h; sourceTree = "<group>"; };
+		C3FBAA1A1B7FF53C002A33EA /* MoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItem.m; sourceTree = "<group>"; };
+		C3FBAA1B1B7FF53C002A33EA /* MoreViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MoreViewController-5.xib"; sourceTree = "<group>"; };
+		C3FBAA1C1B7FF53C002A33EA /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		C3FBAA1D1B7FF53C002A33EA /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		C3FBAA1E1B7FF53C002A33EA /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		C3FBAA1F1B7FF53C002A33EA /* MoreViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MoreViewController~ipad.xib"; sourceTree = "<group>"; };
+		C3FBAA201B7FF53C002A33EA /* XmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlParser.h; sourceTree = "<group>"; };
+		C3FBAA211B7FF53C002A33EA /* XmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlParser.m; sourceTree = "<group>"; };
+		C3FBAA221B7FF53C002A33EA /* NailDecorateViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NailDecorateViewController-5.xib"; sourceTree = "<group>"; };
+		C3FBAA231B7FF53C002A33EA /* NailDecorateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NailDecorateViewController.h; sourceTree = "<group>"; };
+		C3FBAA241B7FF53C002A33EA /* NailDecorateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NailDecorateViewController.m; sourceTree = "<group>"; };
+		C3FBAA251B7FF53C002A33EA /* NailDecorateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NailDecorateViewController.xib; sourceTree = "<group>"; };
+		C3FBAA261B7FF53C002A33EA /* NailDecorateViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NailDecorateViewController~ipad.xib"; sourceTree = "<group>"; };
+		C3FBAA271B7FF53C002A33EA /* NailFinalViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NailFinalViewController-5.xib"; sourceTree = "<group>"; };
+		C3FBAA281B7FF53C002A33EA /* NailFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NailFinalViewController.h; sourceTree = "<group>"; };
+		C3FBAA291B7FF53C002A33EA /* NailFinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NailFinalViewController.m; sourceTree = "<group>"; };
+		C3FBAA2A1B7FF53C002A33EA /* NailFinalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NailFinalViewController.xib; sourceTree = "<group>"; };
+		C3FBAA2B1B7FF53C002A33EA /* NailFinalViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NailFinalViewController~ipad.xib"; sourceTree = "<group>"; };
+		C3FBAA2D1B7FF53C002A33EA /* PrivacyPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyPolicy.h; sourceTree = "<group>"; };
+		C3FBAA2E1B7FF53C002A33EA /* PrivacyPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyPolicy.m; sourceTree = "<group>"; };
+		C3FBAA2F1B7FF53C002A33EA /* PrivacyPolicy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyPolicy.xib; sourceTree = "<group>"; };
+		C3FBAA311B7FF53C002A33EA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C3FBAA321B7FF53C002A33EA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C3FBAA341B7FF53C002A33EA /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		C3FBAA351B7FF53C002A33EA /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
 		CF8E38D319F7E86D0005BA95 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
 		CF8E38D519F7EA2C0005BA95 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		CF8E38D719F7EB100005BA95 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -1269,16 +1275,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28312AE31802E69B00FBE04A /* PrivacyPolicy */ = {
-			isa = PBXGroup;
-			children = (
-				28312AE41802E69B00FBE04A /* PrivacyPolicy.h */,
-				28312AE51802E69B00FBE04A /* PrivacyPolicy.m */,
-				28312AE61802E69B00FBE04A /* PrivacyPolicy.xib */,
-			);
-			path = PrivacyPolicy;
-			sourceTree = "<group>";
-		};
 		28312AE91802E6C500FBE04A /* Privacy */ = {
 			isa = PBXGroup;
 			children = (
@@ -1287,33 +1283,6 @@
 				28312AEC1802E6C500FBE04A /* PrivacyPolicy.png */,
 			);
 			path = Privacy;
-			sourceTree = "<group>";
-		};
-		650893BC173C1EE500336485 /* MoreScreen */ = {
-			isa = PBXGroup;
-			children = (
-				650893BD173C1EE600336485 /* FreeAppOfTheDAy.h */,
-				650893BE173C1EE600336485 /* FreeAppOfTheDAy.m */,
-				650893BF173C1EE600336485 /* MoreItem.h */,
-				650893C0173C1EE600336485 /* MoreItem.m */,
-				650893C2173C1EE600336485 /* MoreViewController.h */,
-				650893C3173C1EE600336485 /* MoreViewController.m */,
-				650893C4173C1EE600336485 /* MoreViewController.xib */,
-				650893C1173C1EE600336485 /* MoreViewController-5.xib */,
-				650893C5173C1EE600336485 /* MoreViewController~ipad.xib */,
-				650893C6173C1EE600336485 /* XmlParser.h */,
-				650893C7173C1EE600336485 /* XmlParser.m */,
-			);
-			path = MoreScreen;
-			sourceTree = "<group>";
-		};
-		650893CF173C1EE900336485 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				650893D0173C1EEA00336485 /* Reachability.h */,
-				650893D1173C1EEA00336485 /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		650893D3173C1FCA00336485 /* More screen */ = {
@@ -1398,10 +1367,10 @@
 		65708B251739815D00F5F784 /* NailSalon */ = {
 			isa = PBXGroup;
 			children = (
-				65708B3C1739827D00F5F784 /* Classes */,
-				A88CFE2118F3E57C00FF40A4 /* Defines.h */,
-				65708B2E1739815D00F5F784 /* AppDelegate.h */,
-				65708B2F1739815D00F5F784 /* AppDelegate.m */,
+				C3FBA9FF1B7FF53C002A33EA /* AppDelegate */,
+				C3FBAA021B7FF53C002A33EA /* CustomClasses */,
+				C3FBAA081B7FF53C002A33EA /* Utils */,
+				C3FBAA0A1B7FF53C002A33EA /* ViewControllers */,
 				65708B261739815D00F5F784 /* Supporting Files */,
 				65708B42173982BA00F5F784 /* Resources */,
 				65FEB8B3173BC79C0048E65D /* Sounds */,
@@ -1430,33 +1399,6 @@
 				65708B2D1739815D00F5F784 /* NailSalon-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		65708B3C1739827D00F5F784 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				65708B3D1739828F00F5F784 /* MenuViewController.h */,
-				65708B3E1739828F00F5F784 /* MenuViewController.m */,
-				65708B3F1739828F00F5F784 /* MenuViewController.xib */,
-				65E2A5B5173D2CC3005D368D /* MenuViewController-5.xib */,
-				65E2A5B6173D2CC4005D368D /* MenuViewController~ipad.xib */,
-				65708EF0173983F500F5F784 /* NailDecorateViewController.h */,
-				65708EF1173983F500F5F784 /* NailDecorateViewController.m */,
-				65708EF2173983F500F5F784 /* NailDecorateViewController.xib */,
-				65E2A5B9173D2E60005D368D /* NailDecorateViewController-5.xib */,
-				65E2A5BA173D2E61005D368D /* NailDecorateViewController~ipad.xib */,
-				6508941A173C200800336485 /* NailFinalViewController.h */,
-				6508941B173C200800336485 /* NailFinalViewController.m */,
-				6508941C173C200800336485 /* NailFinalViewController.xib */,
-				65E2A5BD173D3B83005D368D /* NailFinalViewController-5.xib */,
-				65E2A5BE173D3B83005D368D /* NailFinalViewController~ipad.xib */,
-				28312AE31802E69B00FBE04A /* PrivacyPolicy */,
-				650893CF173C1EE900336485 /* Reachability */,
-				650893BC173C1EE500336485 /* MoreScreen */,
-				65FEB86E173B9A680048E65D /* Store */,
-				65E2A5A1173CDA35005D368D /* Album */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		65708B42173982BA00F5F784 /* Resources */ = {
@@ -2144,18 +2086,6 @@
 			path = extrass;
 			sourceTree = "<group>";
 		};
-		65E2A5A1173CDA35005D368D /* Album */ = {
-			isa = PBXGroup;
-			children = (
-				65E2A5A2173CDA51005D368D /* AlbumViewController.h */,
-				65E2A5A3173CDA51005D368D /* AlbumViewController.m */,
-				65E2A5A4173CDA51005D368D /* AlbumViewController.xib */,
-				65E2A5C1173D3F8A005D368D /* AlbumViewController-5.xib */,
-				65E2A5C2173D3F8A005D368D /* AlbumViewController~ipad.xib */,
-			);
-			path = Album;
-			sourceTree = "<group>";
-		};
 		65FE6639173A64F30067CD40 /* updates */ = {
 			isa = PBXGroup;
 			children = (
@@ -2293,15 +2223,6 @@
 			path = selected;
 			sourceTree = "<group>";
 		};
-		65FEB86E173B9A680048E65D /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				65FEB870173B9A680048E65D /* StoreViewController.h */,
-				65FEB871173B9A680048E65D /* StoreViewController.m */,
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
 		65FEB8B3173BC79C0048E65D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -2312,6 +2233,131 @@
 				65FEB8B7173BC79C0048E65D /* magic-chime-06.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C3FBA9FF1B7FF53C002A33EA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA001B7FF53C002A33EA /* AppDelegate.h */,
+				C3FBAA011B7FF53C002A33EA /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			path = nailsalon/AppDelegate;
+			sourceTree = SOURCE_ROOT;
+		};
+		C3FBAA021B7FF53C002A33EA /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA031B7FF53C002A33EA /* HFColorPicker */,
+			);
+			name = CustomClasses;
+			path = nailsalon/CustomClasses;
+			sourceTree = SOURCE_ROOT;
+		};
+		C3FBAA031B7FF53C002A33EA /* HFColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA041B7FF53C002A33EA /* HFColorButton.h */,
+				C3FBAA051B7FF53C002A33EA /* HFColorButton.m */,
+				C3FBAA061B7FF53C002A33EA /* HFColorPickerView.h */,
+				C3FBAA071B7FF53C002A33EA /* HFColorPickerView.m */,
+			);
+			path = HFColorPicker;
+			sourceTree = "<group>";
+		};
+		C3FBAA081B7FF53C002A33EA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA091B7FF53C002A33EA /* Defines.h */,
+			);
+			name = Utils;
+			path = nailsalon/Utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		C3FBAA0A1B7FF53C002A33EA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA0B1B7FF53C002A33EA /* Album */,
+				C3FBAA111B7FF53C002A33EA /* MenuViewController-5.xib */,
+				C3FBAA121B7FF53C002A33EA /* MenuViewController.h */,
+				C3FBAA131B7FF53C002A33EA /* MenuViewController.m */,
+				C3FBAA141B7FF53C002A33EA /* MenuViewController.xib */,
+				C3FBAA151B7FF53C002A33EA /* MenuViewController~ipad.xib */,
+				C3FBAA161B7FF53C002A33EA /* MoreScreen */,
+				C3FBAA221B7FF53C002A33EA /* NailDecorateViewController-5.xib */,
+				C3FBAA231B7FF53C002A33EA /* NailDecorateViewController.h */,
+				C3FBAA241B7FF53C002A33EA /* NailDecorateViewController.m */,
+				C3FBAA251B7FF53C002A33EA /* NailDecorateViewController.xib */,
+				C3FBAA261B7FF53C002A33EA /* NailDecorateViewController~ipad.xib */,
+				C3FBAA271B7FF53C002A33EA /* NailFinalViewController-5.xib */,
+				C3FBAA281B7FF53C002A33EA /* NailFinalViewController.h */,
+				C3FBAA291B7FF53C002A33EA /* NailFinalViewController.m */,
+				C3FBAA2A1B7FF53C002A33EA /* NailFinalViewController.xib */,
+				C3FBAA2B1B7FF53C002A33EA /* NailFinalViewController~ipad.xib */,
+				C3FBAA2C1B7FF53C002A33EA /* PrivacyPolicy */,
+				C3FBAA301B7FF53C002A33EA /* Reachability */,
+				C3FBAA331B7FF53C002A33EA /* Store */,
+			);
+			name = ViewControllers;
+			path = nailsalon/ViewControllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		C3FBAA0B1B7FF53C002A33EA /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA0C1B7FF53C002A33EA /* AlbumViewController-5.xib */,
+				C3FBAA0D1B7FF53C002A33EA /* AlbumViewController.h */,
+				C3FBAA0E1B7FF53C002A33EA /* AlbumViewController.m */,
+				C3FBAA0F1B7FF53C002A33EA /* AlbumViewController.xib */,
+				C3FBAA101B7FF53C002A33EA /* AlbumViewController~ipad.xib */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		C3FBAA161B7FF53C002A33EA /* MoreScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA171B7FF53C002A33EA /* FreeAppOfTheDAy.h */,
+				C3FBAA181B7FF53C002A33EA /* FreeAppOfTheDAy.m */,
+				C3FBAA191B7FF53C002A33EA /* MoreItem.h */,
+				C3FBAA1A1B7FF53C002A33EA /* MoreItem.m */,
+				C3FBAA1B1B7FF53C002A33EA /* MoreViewController-5.xib */,
+				C3FBAA1C1B7FF53C002A33EA /* MoreViewController.h */,
+				C3FBAA1D1B7FF53C002A33EA /* MoreViewController.m */,
+				C3FBAA1E1B7FF53C002A33EA /* MoreViewController.xib */,
+				C3FBAA1F1B7FF53C002A33EA /* MoreViewController~ipad.xib */,
+				C3FBAA201B7FF53C002A33EA /* XmlParser.h */,
+				C3FBAA211B7FF53C002A33EA /* XmlParser.m */,
+			);
+			path = MoreScreen;
+			sourceTree = "<group>";
+		};
+		C3FBAA2C1B7FF53C002A33EA /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA2D1B7FF53C002A33EA /* PrivacyPolicy.h */,
+				C3FBAA2E1B7FF53C002A33EA /* PrivacyPolicy.m */,
+				C3FBAA2F1B7FF53C002A33EA /* PrivacyPolicy.xib */,
+			);
+			path = PrivacyPolicy;
+			sourceTree = "<group>";
+		};
+		C3FBAA301B7FF53C002A33EA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA311B7FF53C002A33EA /* Reachability.h */,
+				C3FBAA321B7FF53C002A33EA /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		C3FBAA331B7FF53C002A33EA /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBAA341B7FF53C002A33EA /* StoreViewController.h */,
+				C3FBAA351B7FF53C002A33EA /* StoreViewController.m */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2366,7 +2412,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				65708B2A1739815D00F5F784 /* InfoPlist.strings in Resources */,
-				65708B411739828F00F5F784 /* MenuViewController.xib in Resources */,
 				65708D27173982E100F5F784 /* back.png in Resources */,
 				65708D28173982E100F5F784 /* backgroundMenu.png in Resources */,
 				65708D29173982E100F5F784 /* 1.png in Resources */,
@@ -2378,6 +2423,7 @@
 				65708D2F173982E100F5F784 /* 6.png in Resources */,
 				65708D30173982E100F5F784 /* 7.png in Resources */,
 				65708D31173982E100F5F784 /* 8.png in Resources */,
+				C3FBAA401B7FF53C002A33EA /* MenuViewController~ipad.xib in Resources */,
 				65708D32173982E100F5F784 /* 9.png in Resources */,
 				65708D33173982E100F5F784 /* x1.png in Resources */,
 				65708D34173982E100F5F784 /* x10.png in Resources */,
@@ -2438,7 +2484,6 @@
 				65708D73173982E100F5F784 /* 7_568.png in Resources */,
 				65708D74173982E100F5F784 /* 8_568.png in Resources */,
 				65708D75173982E100F5F784 /* 9_568.png in Resources */,
-				28312AE81802E69B00FBE04A /* PrivacyPolicy.xib in Resources */,
 				28312AF41802E8DF00FBE04A /* Icon-120.png in Resources */,
 				65708D77173982E100F5F784 /* galleryback_568.png in Resources */,
 				65708D7C173982E100F5F784 /* nailC1.png in Resources */,
@@ -2457,8 +2502,10 @@
 				65708D89173982E100F5F784 /* nailC3.png in Resources */,
 				65708D8A173982E100F5F784 /* nailC4.png in Resources */,
 				65708D8B173982E100F5F784 /* nailC5.png in Resources */,
+				C3FBAA4A1B7FF53C002A33EA /* NailDecorateViewController.xib in Resources */,
 				65708D8C173982E100F5F784 /* nailC6.png in Resources */,
 				65708D8D173982E100F5F784 /* nailC7.png in Resources */,
+				C3FBAA4C1B7FF53C002A33EA /* NailFinalViewController-5.xib in Resources */,
 				65708D8E173982E100F5F784 /* nailC8.png in Resources */,
 				65708D8F173982E100F5F784 /* nailC9.png in Resources */,
 				65708DA4173982E100F5F784 /* nailG1.png in Resources */,
@@ -2502,6 +2549,7 @@
 				65708DDD173982E100F5F784 /* nailP7.png in Resources */,
 				65708DDE173982E100F5F784 /* nailP8.png in Resources */,
 				65708DDF173982E100F5F784 /* nailP9.png in Resources */,
+				C3FBAA3C1B7FF53C002A33EA /* AlbumViewController~ipad.xib in Resources */,
 				65708DF4173982E100F5F784 /* nailT1.png in Resources */,
 				65708DF5173982E100F5F784 /* nailT10.png in Resources */,
 				65708DF6173982E100F5F784 /* nailT11.png in Resources */,
@@ -2567,7 +2615,6 @@
 				65708EEA173982E100F5F784 /* select@2x.png in Resources */,
 				65708EEC173982E100F5F784 /* tips@2x.png in Resources */,
 				65708EED173982E100F5F784 /* undo@2x.png in Resources */,
-				65708EF4173983F500F5F784 /* NailDecorateViewController.xib in Resources */,
 				65708F091739903600F5F784 /* nailT1@2x.png in Resources */,
 				65708F0A1739903600F5F784 /* nailT2@2x.png in Resources */,
 				65708F0B1739903600F5F784 /* nailT3@2x.png in Resources */,
@@ -2580,13 +2627,17 @@
 				65708F121739903600F5F784 /* nailT10@2x.png in Resources */,
 				65708F131739903600F5F784 /* nailT11@2x.png in Resources */,
 				65708F141739903600F5F784 /* nailT12@2x.png in Resources */,
+				C3FBAA481B7FF53C002A33EA /* NailDecorateViewController-5.xib in Resources */,
 				65708F151739903600F5F784 /* nailT13@2x.png in Resources */,
 				65708F161739903600F5F784 /* nailT14@2x.png in Resources */,
 				65708F171739903600F5F784 /* nailT15@2x.png in Resources */,
 				65708F181739903600F5F784 /* nailT16@2x.png in Resources */,
+				C3FBAA3B1B7FF53C002A33EA /* AlbumViewController.xib in Resources */,
 				65708F191739903600F5F784 /* nailT17@2x.png in Resources */,
 				65708F1A1739903600F5F784 /* nailT18@2x.png in Resources */,
 				65708F1B1739903600F5F784 /* nailT19@2x.png in Resources */,
+				C3FBAA4B1B7FF53C002A33EA /* NailDecorateViewController~ipad.xib in Resources */,
+				C3FBAA461B7FF53C002A33EA /* MoreViewController~ipad.xib in Resources */,
 				65708F1C1739903600F5F784 /* nailT20@2x.png in Resources */,
 				65708F311739909000F5F784 /* smallnailT1@2x.png in Resources */,
 				65708F321739909000F5F784 /* smallnailT2@2x.png in Resources */,
@@ -2620,6 +2671,7 @@
 				65708F62173990B400F5F784 /* smallnailT10.png in Resources */,
 				65708F63173990B400F5F784 /* smallnailT11.png in Resources */,
 				65708F64173990B400F5F784 /* smallnailT12.png in Resources */,
+				C3FBAA391B7FF53C002A33EA /* AlbumViewController-5.xib in Resources */,
 				65708F65173990B400F5F784 /* smallnailT13.png in Resources */,
 				65708F66173990B400F5F784 /* smallnailT14.png in Resources */,
 				65708F67173990B400F5F784 /* smallnailT15.png in Resources */,
@@ -2633,6 +2685,7 @@
 				65708F83173990DC00F5F784 /* smallnailC3.png in Resources */,
 				65708F84173990DC00F5F784 /* smallnailC4.png in Resources */,
 				65708F85173990DC00F5F784 /* smallnailC5.png in Resources */,
+				C3FBAA4F1B7FF53C002A33EA /* NailFinalViewController~ipad.xib in Resources */,
 				65708F86173990DC00F5F784 /* smallnailC6.png in Resources */,
 				65708F87173990DC00F5F784 /* smallnailC7.png in Resources */,
 				65708F88173990DC00F5F784 /* smallnailC8.png in Resources */,
@@ -2672,6 +2725,7 @@
 				65708FD11739912F00F5F784 /* smallnailG1.png in Resources */,
 				65708FD21739912F00F5F784 /* smallnailG2.png in Resources */,
 				65708FD31739912F00F5F784 /* smallnailG3.png in Resources */,
+				C3FBAA4E1B7FF53C002A33EA /* NailFinalViewController.xib in Resources */,
 				65708FD41739912F00F5F784 /* smallnailG4.png in Resources */,
 				65708FD51739912F00F5F784 /* smallnailG5.png in Resources */,
 				65708FD61739912F00F5F784 /* smallnailG6.png in Resources */,
@@ -2697,11 +2751,13 @@
 				65708FFE1739915B00F5F784 /* nailG6@2x.png in Resources */,
 				65708FFF1739915B00F5F784 /* nailG7@2x.png in Resources */,
 				657090001739915B00F5F784 /* nailG8@2x.png in Resources */,
+				C3FBAA511B7FF53C002A33EA /* PrivacyPolicy.xib in Resources */,
 				657090011739915B00F5F784 /* nailG9@2x.png in Resources */,
 				657090021739915B00F5F784 /* nailG10@2x.png in Resources */,
 				657090031739915B00F5F784 /* nailG11@2x.png in Resources */,
 				657090041739915B00F5F784 /* nailG12@2x.png in Resources */,
 				657090051739915B00F5F784 /* nailG13@2x.png in Resources */,
+				C3FBAA3D1B7FF53C002A33EA /* MenuViewController-5.xib in Resources */,
 				657090061739915B00F5F784 /* nailG14@2x.png in Resources */,
 				657090071739915B00F5F784 /* nailG15@2x.png in Resources */,
 				657090081739915B00F5F784 /* nailG16@2x.png in Resources */,
@@ -2778,6 +2834,7 @@
 				6570909F173991D800F5F784 /* smallnailP7@2x.png in Resources */,
 				657090A0173991D800F5F784 /* smallnailP8@2x.png in Resources */,
 				657090A1173991D800F5F784 /* smallnailP9@2x.png in Resources */,
+				C3FBAA451B7FF53C002A33EA /* MoreViewController.xib in Resources */,
 				657090A2173991D800F5F784 /* smallnailP10@2x.png in Resources */,
 				657090A3173991D800F5F784 /* smallnailP11@2x.png in Resources */,
 				657090A4173991D800F5F784 /* smallnailP12@2x.png in Resources */,
@@ -2845,6 +2902,7 @@
 				65FE66B7173A66EE0067CD40 /* background2.png in Resources */,
 				65FE66B8173A66EE0067CD40 /* extrass2.png in Resources */,
 				65FE66B9173A66EE0067CD40 /* gloss2.png in Resources */,
+				C3FBAA3F1B7FF53C002A33EA /* MenuViewController.xib in Resources */,
 				65FE66BA173A66EE0067CD40 /* handColor2.png in Resources */,
 				65FE66BB173A66EE0067CD40 /* paint2.png in Resources */,
 				65FE66BC173A66EE0067CD40 /* patterns2.png in Resources */,
@@ -2862,9 +2920,6 @@
 				65FEB8BB173BC79C0048E65D /* magic-chime-06.mp3 in Resources */,
 				65FEB8BD173BD0720048E65D /* unlockSparkle.png in Resources */,
 				65FEB8BF173BD07F0048E65D /* unlockSparkle@2x.png in Resources */,
-				650893CA173C1EE600336485 /* MoreViewController-5.xib in Resources */,
-				650893CC173C1EE600336485 /* MoreViewController.xib in Resources */,
-				650893CD173C1EE600336485 /* MoreViewController~ipad.xib in Resources */,
 				650893F7173C1FCA00336485 /* back_more~ipad.png in Resources */,
 				650893F8173C1FCA00336485 /* backMore.png in Resources */,
 				650893F9173C1FCA00336485 /* backMore@2x.png in Resources */,
@@ -2894,8 +2949,6 @@
 				65089414173C1FCA00336485 /* ray.png in Resources */,
 				65089415173C1FCA00336485 /* ray@2x.png in Resources */,
 				65089416173C1FCA00336485 /* ray~ipad.png in Resources */,
-				6508941E173C200800336485 /* NailFinalViewController.xib in Resources */,
-				65E2A5A6173CDA51005D368D /* AlbumViewController.xib in Resources */,
 				65E2A5AD173CDB59005D368D /* gold_right~ipad.png in Resources */,
 				65E2A5AE173CDB59005D368D /* gold_left~ipad.png in Resources */,
 				65E2A5AF173CDB59005D368D /* gold_right@2x.png in Resources */,
@@ -2903,20 +2956,13 @@
 				65E2A5B1173CDB59005D368D /* gold_right.png in Resources */,
 				65E2A5B2173CDB59005D368D /* gold_left.png in Resources */,
 				65E2A5B4173D1923005D368D /* white-star.png in Resources */,
-				65E2A5B7173D2CC5005D368D /* MenuViewController-5.xib in Resources */,
-				65E2A5B8173D2CC5005D368D /* MenuViewController~ipad.xib in Resources */,
-				65E2A5BB173D2E61005D368D /* NailDecorateViewController-5.xib in Resources */,
-				65E2A5BC173D2E61005D368D /* NailDecorateViewController~ipad.xib in Resources */,
-				65E2A5BF173D3B84005D368D /* NailFinalViewController-5.xib in Resources */,
-				65E2A5C0173D3B84005D368D /* NailFinalViewController~ipad.xib in Resources */,
-				65E2A5C3173D3F8B005D368D /* AlbumViewController-5.xib in Resources */,
-				65E2A5C4173D3F8B005D368D /* AlbumViewController~ipad.xib in Resources */,
 				65FA333317423291005E36AA /* ApplyAll.png in Resources */,
 				65FA333417423291005E36AA /* ApplyAll@2x.png in Resources */,
 				65FA333517423291005E36AA /* ApplyAll~ipad.png in Resources */,
 				65FA333617423291005E36AA /* gallery.png in Resources */,
 				65FA333717423291005E36AA /* gallery@2x.png in Resources */,
 				65FA333817423291005E36AA /* gallery~ipad.png in Resources */,
+				C3FBAA431B7FF53C002A33EA /* MoreViewController-5.xib in Resources */,
 				65FA333917423291005E36AA /* more.png in Resources */,
 				65FA333A17423291005E36AA /* more@2x.png in Resources */,
 				65FA333B17423291005E36AA /* more~ipad.png in Resources */,
@@ -2953,19 +2999,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FBAA381B7FF53C002A33EA /* HFColorPickerView.m in Sources */,
+				C3FBAA4D1B7FF53C002A33EA /* NailFinalViewController.m in Sources */,
+				C3FBAA3E1B7FF53C002A33EA /* MenuViewController.m in Sources */,
+				C3FBAA471B7FF53C002A33EA /* XmlParser.m in Sources */,
+				C3FBAA501B7FF53C002A33EA /* PrivacyPolicy.m in Sources */,
+				C3FBAA3A1B7FF53C002A33EA /* AlbumViewController.m in Sources */,
+				C3FBAA411B7FF53C002A33EA /* FreeAppOfTheDAy.m in Sources */,
+				C3FBAA441B7FF53C002A33EA /* MoreViewController.m in Sources */,
+				C3FBAA361B7FF53C002A33EA /* AppDelegate.m in Sources */,
+				C3FBAA371B7FF53C002A33EA /* HFColorButton.m in Sources */,
+				C3FBAA521B7FF53C002A33EA /* Reachability.m in Sources */,
 				65708B2C1739815D00F5F784 /* main.m in Sources */,
-				65708B301739815D00F5F784 /* AppDelegate.m in Sources */,
-				65708B401739828F00F5F784 /* MenuViewController.m in Sources */,
-				65708EF3173983F500F5F784 /* NailDecorateViewController.m in Sources */,
-				28312AE71802E69B00FBE04A /* PrivacyPolicy.m in Sources */,
-				65FEB875173B9A680048E65D /* StoreViewController.m in Sources */,
-				650893C8173C1EE600336485 /* FreeAppOfTheDAy.m in Sources */,
-				650893C9173C1EE600336485 /* MoreItem.m in Sources */,
-				650893CB173C1EE600336485 /* MoreViewController.m in Sources */,
-				650893CE173C1EE600336485 /* XmlParser.m in Sources */,
-				650893D2173C1EEA00336485 /* Reachability.m in Sources */,
-				6508941D173C200800336485 /* NailFinalViewController.m in Sources */,
-				65E2A5A5173CDA51005D368D /* AlbumViewController.m in Sources */,
+				C3FBAA491B7FF53C002A33EA /* NailDecorateViewController.m in Sources */,
+				C3FBAA421B7FF53C002A33EA /* MoreItem.m in Sources */,
+				C3FBAA531B7FF53C002A33EA /* StoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3052,8 +3100,8 @@
 		65708B3A1739815D00F5F784 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: mike walton (5MBN3Z8FCM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: mike walton (5MBN3Z8FCM)";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3071,7 +3119,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f339811c-a621-4b90-902c-399f61f2facf";
 				VALID_ARCHS = "armv7 armv7s armv64";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3080,8 +3128,8 @@
 		65708B3B1739815D00F5F784 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: mike walton (5MBN3Z8FCM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: mike walton (5MBN3Z8FCM)";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3099,8 +3147,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "f339811c-a621-4b90-902c-399f61f2facf";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "f339811c-a621-4b90-902c-399f61f2facf";
 				VALID_ARCHS = "armv7 armv7s armv64";
 				WRAPPER_EXTENSION = app;
 			};
