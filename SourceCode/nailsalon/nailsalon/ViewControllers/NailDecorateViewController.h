@@ -23,6 +23,21 @@
     IBOutlet UIView *nail4View;
     IBOutlet UIView *nail5View;
     
+    IBOutlet UIScrollView       *scrollViewColorPicker;
+    
+    // Color buttons
+    IBOutlet UIButton *btnClose;
+    IBOutlet UIButton *btnPurple;
+    IBOutlet UIButton *btnRed;
+    IBOutlet UIButton *btnBrown;
+    IBOutlet UIButton *btnBlue;
+    IBOutlet UIButton *btnSkyBlue;
+    IBOutlet UIButton *btnOrange;
+    IBOutlet UIButton *btnGreen;
+    IBOutlet UIButton *btnYellow;
+    IBOutlet UIButton *btnBlack;
+    IBOutlet UIButton *btnMagenta;
+    
     IBOutlet UIImageView *nail1Color;
     IBOutlet UIImageView *nail1Gloss;
     IBOutlet UIImageView *nail1Pattern;
@@ -87,6 +102,8 @@
     int hand;
     int background;
     
+    BOOL isActive;
+    
     NSMutableArray *extras1Array;
     NSMutableArray *extras2Array;
     NSMutableArray *extras3Array;
@@ -97,6 +114,8 @@
     NSMutableArray *changes3;
     NSMutableArray *changes4;
     NSMutableArray *changes5;
+    
+    NSArray *arrColorButtons;
 }
 
 - (IBAction)nailSelected:(UIButton*)sender;
@@ -107,5 +126,18 @@
 - (IBAction)unlockEverythingClick:(id)sender;
 - (IBAction)nextClick:(id)sender;
 - (IBAction)applyToAll:(id)sender;
+
+// Color Actions
+- (IBAction)btnClose_action:(UIButton *)sender;
+- (IBAction)btnPurple_action:(UIButton *)sender;
+- (IBAction)btnRed_action:(UIButton *)sender;
+- (IBAction)btnBrown_action:(UIButton *)sender;
+- (IBAction)btnBlue_action:(UIButton *)sender;
+- (IBAction)btnSkyBlue_action:(UIButton *)sender;
+- (IBAction)btnOrange_action:(UIButton *)sender;
+- (IBAction)btnGreen_action:(UIButton *)sender;
+- (IBAction)btnYellow_action:(UIButton *)sender;
+- (IBAction)btnBlack_action:(UIButton *)sender;
+- (IBAction)btnMagenta_action:(UIButton *)sender;
 
 @end

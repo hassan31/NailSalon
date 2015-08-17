@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     nailSelected = 0;
     nail1ColorNr = 1;
     nail2ColorNr = 1;
@@ -66,7 +67,9 @@
     changes5 = [[NSMutableArray alloc] init];
 
     [self addMaskToHoleView];
-    menuScroll.contentSize = CGSizeMake(432, menuScroll.frame.size.height);
+    menuScroll.contentSize = CGSizeMake(490, menuScroll.frame.size.height);
+    
+    [self setUpColorPickerView];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -94,6 +97,27 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)setUpColorPickerView {
+    
+    btnPurple.layer.cornerRadius    = btnPurple.frame.size.width/2.0;
+    btnPurple.layer.borderColor     = [UIColor whiteColor].CGColor;
+    btnPurple.layer.borderWidth     = 2.0f;
+    
+    btnRed.layer.cornerRadius       = btnRed.frame.size.width/2.0;
+    btnBrown.layer.cornerRadius     = btnBrown.frame.size.width/2.0;
+    btnSkyBlue.layer.cornerRadius   = btnSkyBlue.frame.size.width/2.0;
+    btnOrange.layer.cornerRadius    = btnOrange.frame.size.width/2.0;
+    btnGreen.layer.cornerRadius     = btnGreen.frame.size.width/2.0;
+    btnYellow.layer.cornerRadius    = btnYellow.frame.size.width/2.0;
+    btnBlack.layer.cornerRadius     = btnBlack.frame.size.width/2.0;
+    btnMagenta.layer.cornerRadius   = btnMagenta.frame.size.width/2.0;
+    btnPurple.layer.cornerRadius    = btnPurple.frame.size.width/2.0;
+    btnBlue.layer.cornerRadius      = btnBlue.frame.size.width/2.0;
+    
+    arrColorButtons = @[btnPurple, btnRed, btnBrown, btnSkyBlue, btnOrange, btnBlue, btnBlack, btnYellow, btnMagenta, btnGreen];
+    
 }
 
 #pragma mark - IBAction
@@ -686,6 +710,7 @@
         
         secondScroll.hidden = NO;
         greyImgView.hidden = NO;
+        scrollViewColorPicker.hidden = NO;
     }
     else
     {
@@ -693,6 +718,7 @@
             [b setSelected:NO];
         
         secondScroll.hidden = YES;
+        scrollViewColorPicker.hidden = YES;
         greyImgView.hidden = YES;
         
         lastAccessory = -1;
@@ -701,415 +727,431 @@
     
     lastAccessory = sender.tag;
 
-
-    if(sender.tag == 0)
-    {
-        for(int i = 0; i <= 20; i++)
-        {
-            if(i == 0)
-            {
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                    button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                
-                [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
-                button.tag = sender.tag;
-                [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
-                [secondScroll addSubview:button];
-                [button release];
-            }
-            else
-            {
-                if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) colorLocked] == YES)
-                {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                    
-                    button.tag = 1;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailC%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailC%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
-                    
-                    UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
-                    locked.image = [UIImage imageNamed:@"lockSmall.png"];
-                    [button addSubview:locked];
-                    [locked release];
-                    
-                    
-                    [secondScroll addSubview:button];
-                    [button release];
-                }
-                else
-                {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                    
-                    button.tag = i;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailC%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailC%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:self action:@selector(colorChosen:) forControlEvents:UIControlEventTouchUpInside];
-                    [secondScroll addSubview:button];
-                    [button release];
-                }
-            }
-        }
-        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-            secondScroll.contentSize = CGSizeMake(80 * 21 + 15 + 2 * 22 + 15, secondScroll.frame.size.height);
-        else
-            secondScroll.contentSize = CGSizeMake(50 * 21 + 5 + 2 * 22 + 5, secondScroll.frame.size.height);
-
-    }
-    else if(sender.tag == 1)
-    {
-        for(int i = 0; i <= 20; i++)
-        {
-            if(i == 0)
-            {
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                    button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                
-                [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
-                button.tag = sender.tag;
-                [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
-                [secondScroll addSubview:button];
-                [button release];
-            }
-            else
-            {
-                if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) glossLocked] == YES)
-                {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-
-                    button.tag = 3;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailG%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailG%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
-
-                    UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
-                    locked.image = [UIImage imageNamed:@"lockSmall.png"];
-                    [button addSubview:locked];
-                    [locked release];
-
-
-                    [secondScroll addSubview:button];
-                    [button release];
-                }
-                else
-                {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                    
-                    button.tag = i;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailG%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailG%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:self action:@selector(glossChosen:) forControlEvents:UIControlEventTouchUpInside];
-                    [secondScroll addSubview:button];
-                    [button release];
-                }
-            }
-        }
-        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-            secondScroll.contentSize = CGSizeMake(80 * 21 + 15 + 2 * 22 + 15, secondScroll.frame.size.height);
-        else
-            secondScroll.contentSize = CGSizeMake(50 * 21 + 5 + 2 * 22 + 5, secondScroll.frame.size.height);
+    if (sender.tag == 7) {
         
-    }
-    else if(sender.tag == 2)
-    {
-        for(int i = 0; i <= 20; i++)
-        {
-            if(i == 0)
-            {
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                    button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                
-                [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
-                button.tag = sender.tag;
-                [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
-                [secondScroll addSubview:button];
-                [button release];
-            }
-            else
-            {
-                if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) patternLocked] == YES)
-                {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+        [UIView animateWithDuration:0.7 animations:^{
+            
+            scrollViewColorPicker.frame = CGRectMake(0, scrollViewColorPicker.frame.origin.y, scrollViewColorPicker.frame.size.width, scrollViewColorPicker.frame.size.height);
+            greyImgView.frame = scrollViewColorPicker.frame;
 
-                    button.tag = 4;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailP%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailP%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
-
-                    UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
-                    locked.image = [UIImage imageNamed:@"lockSmall.png"];
-                    [button addSubview:locked];
-                    [locked release];
-
-
-                    [secondScroll addSubview:button];
-                    [button release];
-                }
-                else
-                {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                
-                    button.tag = i;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailP%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailP%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:self action:@selector(patternChosen:) forControlEvents:UIControlEventTouchUpInside];
-                    [secondScroll addSubview:button];
-                    [button release];
-                }
-            }
-        }
-        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-            secondScroll.contentSize = CGSizeMake(80 * 21 + 15 + 2 * 22 + 15, secondScroll.frame.size.height);
-        else
-            secondScroll.contentSize = CGSizeMake(50 * 21 + 5 + 2 * 22 + 5, secondScroll.frame.size.height);
+        }];
         
-    }
-    else if(sender.tag == 3)
-    {
-        for(int i = 0; i <= 20; i++)
-        {
-            if(i == 0)
-            {
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                    button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                
-                [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
-                button.tag = sender.tag;
-                [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
-                [secondScroll addSubview:button];
-                [button release];
-            }
-            else
-            {
-                if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) tipLocked] == YES)
-                {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-
-                    button.tag = 5;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailT%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailT%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
-
-                    UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
-                    locked.image = [UIImage imageNamed:@"lockSmall.png"];
-                    [button addSubview:locked];
-                    [locked release];
-
-
-                    [secondScroll addSubview:button];
-                    [button release];
-                }
-                else
-                {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                    
-                    button.tag = i;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailT%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailT%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:self action:@selector(tipChosen:) forControlEvents:UIControlEventTouchUpInside];
-                    [secondScroll addSubview:button];
-                    [button release];
-                }
-            }
-        }
-        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-            secondScroll.contentSize = CGSizeMake(80 * 21 + 15 + 2 * 22 + 15, secondScroll.frame.size.height);
-        else
-            secondScroll.contentSize = CGSizeMake(50 * 21 + 5 + 2 * 22 + 5, secondScroll.frame.size.height);
+    } else {
         
-    }
-    else if(sender.tag == 4)
-    {
-        for(int i = 0; i <= 21; i++)
+        secondScroll.hidden = false;
+        scrollViewColorPicker.hidden = true;
+        
+        if(sender.tag == 0)
         {
-            if(i == 0)
+            for(int i = 0; i <= 20; i++)
             {
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 5 * i + 50 * i, 3, 50, 50)];
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                    button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                
-                [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
-                button.tag = sender.tag;
-                [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
-                [secondScroll addSubview:button];
-                [button release];
-            }
-            else
-            {
-                if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) extrasLocked] == YES)
+                if(i == 0)
                 {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(15 + 5 * i + 50 * i, 13, 30, 30)];
+                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
                     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 23, 65, 65);
-
-                    button.tag = 2;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", i]] forState:UIControlStateNormal];
-                    else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
-
-                    UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
-                    locked.image = [UIImage imageNamed:@"lockSmall.png"];
-                    [button addSubview:locked];
-                    [locked release];
-
+                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                    
+                    [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
+                    button.tag = sender.tag;
+                    [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
                     [secondScroll addSubview:button];
                     [button release];
                 }
                 else
                 {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(15 + 5 * i + 50 * i, 13, 30, 30)];
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 23, 65, 65);
-                    
-                    button.tag = i;
-                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", i]] forState:UIControlStateNormal];
+                    if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) colorLocked] == YES)
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                        
+                        button.tag = 1;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailC%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailC%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
+                        
+                        UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
+                        locked.image = [UIImage imageNamed:@"lockSmall.png"];
+                        [button addSubview:locked];
+                        [locked release];
+                        
+                        
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
                     else
-                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:self action:@selector(extrasChosen:) forControlEvents:UIControlEventTouchUpInside];
-                    [secondScroll addSubview:button];
-                    [button release];
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                        
+                        button.tag = i;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailC%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailC%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:self action:@selector(colorChosen:) forControlEvents:UIControlEventTouchUpInside];
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
                 }
             }
-        }
-        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-            secondScroll.contentSize = CGSizeMake(80 * 22 + 15 + 2 * 23 + 15, secondScroll.frame.size.height);
-        else
-            secondScroll.contentSize = CGSizeMake(50 * 22 + 15 + 5 * 23, secondScroll.frame.size.height);
-    }
-    else if(sender.tag == 5)
-    {
-        for(int i = 0; i <= 4; i++)
-        {
-            if(i == 0)
-            {
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                    button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 80, 100);
-                
-                [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
-                button.tag = sender.tag;
-                [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
-                [secondScroll addSubview:button];
-                [button release];
-            }
+            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                secondScroll.contentSize = CGSizeMake(80 * 21 + 15 + 2 * 22 + 15, secondScroll.frame.size.height);
             else
-            {
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                    button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 80, 100);
-                
-                button.tag = i;
-                [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"hand%d.png", i]] forState:UIControlStateNormal];
-                [button addTarget:self action:@selector(handChosen:) forControlEvents:UIControlEventTouchUpInside];
-                [secondScroll addSubview:button];
-                [button release];
-            }
+                secondScroll.contentSize = CGSizeMake(50 * 21 + 5 + 2 * 22 + 5, secondScroll.frame.size.height);
+            
         }
-        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-            secondScroll.contentSize = CGSizeMake(90 * 5 + 15 + 2 * 6 + 15, secondScroll.frame.size.height);
-        else
-            secondScroll.contentSize = CGSizeMake(50 * 5 + 5 + 2 * 6 + 5, secondScroll.frame.size.height);
-    }
-    else if(sender.tag == 6)
-    {
-        for(int i = 0; i <= 10; i++)
+        else if(sender.tag == 1)
         {
-            if(i == 0)
+            for(int i = 0; i <= 20; i++)
             {
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
-                if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                    button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
-                
-                [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
-                button.tag = sender.tag;
-                [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
-                [secondScroll addSubview:button];
-                [button release];
-            }
-            else
-            {
-                if(i > 3 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) backgroundLocked] == YES)
+                if(i == 0)
                 {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 40, 50)];
+                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
                     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 90 * i, 1, 80, 100);
+                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
                     
-                    button.tag = 0;
-                    [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
-                    
-                    UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
-                    locked.image = [UIImage imageNamed:@"lockSmall.png"];
-                    [button addSubview:locked];
-                    [locked release];
-                    
-                    
+                    [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
+                    button.tag = sender.tag;
+                    [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
                     [secondScroll addSubview:button];
                     [button release];
                 }
                 else
                 {
-                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 40, 50)];
+                    if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) glossLocked] == YES)
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                        
+                        button.tag = 3;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailG%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailG%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
+                        
+                        UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
+                        locked.image = [UIImage imageNamed:@"lockSmall.png"];
+                        [button addSubview:locked];
+                        [locked release];
+                        
+                        
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                    else
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                        
+                        button.tag = i;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailG%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailG%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:self action:@selector(glossChosen:) forControlEvents:UIControlEventTouchUpInside];
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                }
+            }
+            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                secondScroll.contentSize = CGSizeMake(80 * 21 + 15 + 2 * 22 + 15, secondScroll.frame.size.height);
+            else
+                secondScroll.contentSize = CGSizeMake(50 * 21 + 5 + 2 * 22 + 5, secondScroll.frame.size.height);
+            
+        }
+        else if(sender.tag == 2)
+        {
+            for(int i = 0; i <= 20; i++)
+            {
+                if(i == 0)
+                {
+                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
                     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                        button.frame = CGRectMake(15 + 2 * i + 90 * i, 1, 80, 100);
+                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                    
+                    [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
+                    button.tag = sender.tag;
+                    [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
+                    [secondScroll addSubview:button];
+                    [button release];
+                }
+                else
+                {
+                    if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) patternLocked] == YES)
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                        
+                        button.tag = 4;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailP%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailP%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
+                        
+                        UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
+                        locked.image = [UIImage imageNamed:@"lockSmall.png"];
+                        [button addSubview:locked];
+                        [locked release];
+                        
+                        
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                    else
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                        
+                        button.tag = i;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailP%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailP%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:self action:@selector(patternChosen:) forControlEvents:UIControlEventTouchUpInside];
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                }
+            }
+            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                secondScroll.contentSize = CGSizeMake(80 * 21 + 15 + 2 * 22 + 15, secondScroll.frame.size.height);
+            else
+                secondScroll.contentSize = CGSizeMake(50 * 21 + 5 + 2 * 22 + 5, secondScroll.frame.size.height);
+            
+        }
+        else if(sender.tag == 3)
+        {
+            for(int i = 0; i <= 20; i++)
+            {
+                if(i == 0)
+                {
+                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                    
+                    [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
+                    button.tag = sender.tag;
+                    [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
+                    [secondScroll addSubview:button];
+                    [button release];
+                }
+                else
+                {
+                    if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) tipLocked] == YES)
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                        
+                        button.tag = 5;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailT%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailT%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
+                        
+                        UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
+                        locked.image = [UIImage imageNamed:@"lockSmall.png"];
+                        [button addSubview:locked];
+                        [locked release];
+                        
+                        
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                    else
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                        
+                        button.tag = i;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailT%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"smallnailT%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:self action:@selector(tipChosen:) forControlEvents:UIControlEventTouchUpInside];
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                }
+            }
+            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                secondScroll.contentSize = CGSizeMake(80 * 21 + 15 + 2 * 22 + 15, secondScroll.frame.size.height);
+            else
+                secondScroll.contentSize = CGSizeMake(50 * 21 + 5 + 2 * 22 + 5, secondScroll.frame.size.height);
+            
+        }
+        else if(sender.tag == 4)
+        {
+            for(int i = 0; i <= 21; i++)
+            {
+                if(i == 0)
+                {
+                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 5 * i + 50 * i, 3, 50, 50)];
+                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                    
+                    [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
+                    button.tag = sender.tag;
+                    [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
+                    [secondScroll addSubview:button];
+                    [button release];
+                }
+                else
+                {
+                    if(i > 6 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) extrasLocked] == YES)
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(15 + 5 * i + 50 * i, 13, 30, 30)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 23, 65, 65);
+                        
+                        button.tag = 2;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
+                        
+                        UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
+                        locked.image = [UIImage imageNamed:@"lockSmall.png"];
+                        [button addSubview:locked];
+                        [locked release];
+                        
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                    else
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(15 + 5 * i + 50 * i, 13, 30, 30)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 80 * i, 23, 65, 65);
+                        
+                        button.tag = i;
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", i]] forState:UIControlStateNormal];
+                        else
+                            [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:self action:@selector(extrasChosen:) forControlEvents:UIControlEventTouchUpInside];
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                }
+            }
+            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                secondScroll.contentSize = CGSizeMake(80 * 22 + 15 + 2 * 23 + 15, secondScroll.frame.size.height);
+            else
+                secondScroll.contentSize = CGSizeMake(50 * 22 + 15 + 5 * 23, secondScroll.frame.size.height);
+        }
+        else if(sender.tag == 5)
+        {
+            for(int i = 0; i <= 4; i++)
+            {
+                if(i == 0)
+                {
+                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 80, 100);
+                    
+                    [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
+                    button.tag = sender.tag;
+                    [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
+                    [secondScroll addSubview:button];
+                    [button release];
+                }
+                else
+                {
+                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 80, 100);
                     
                     button.tag = i;
-                    [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i]] forState:UIControlStateNormal];
-                    [button addTarget:self action:@selector(backgroundChosen:) forControlEvents:UIControlEventTouchUpInside];
+                    [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"hand%d.png", i]] forState:UIControlStateNormal];
+                    [button addTarget:self action:@selector(handChosen:) forControlEvents:UIControlEventTouchUpInside];
                     [secondScroll addSubview:button];
                     [button release];
                 }
             }
+            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                secondScroll.contentSize = CGSizeMake(90 * 5 + 15 + 2 * 6 + 15, secondScroll.frame.size.height);
+            else
+                secondScroll.contentSize = CGSizeMake(50 * 5 + 5 + 2 * 6 + 5, secondScroll.frame.size.height);
         }
-        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-            secondScroll.contentSize = CGSizeMake(90 * 11 + 15 + 2 * 12 + 15, secondScroll.frame.size.height);
-        else
-            secondScroll.contentSize = CGSizeMake(50 * 11 + 5 + 2 * 12 + 5, secondScroll.frame.size.height);
+        else if(sender.tag == 6)
+        {
+            for(int i = 0; i <= 10; i++)
+            {
+                if(i == 0)
+                {
+                    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 50, 50)];
+                    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                        button.frame = CGRectMake(15 + 2 * i + 80 * i, 1, 65, 100);
+                    
+                    [button setImage:[UIImage imageNamed:@"cancel.png"] forState:UIControlStateNormal];
+                    button.tag = sender.tag;
+                    [button addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
+                    [secondScroll addSubview:button];
+                    [button release];
+                }
+                else
+                {
+                    if(i > 3 && [((AppDelegate *)[[UIApplication sharedApplication] delegate]) backgroundLocked] == YES)
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 40, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 90 * i, 1, 80, 100);
+                        
+                        button.tag = 0;
+                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:((AppDelegate *)[[UIApplication sharedApplication] delegate]).store action:@selector(productClick:) forControlEvents:UIControlEventTouchUpInside];
+                        
+                        UIImageView *locked = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 20, 25)];
+                        locked.image = [UIImage imageNamed:@"lockSmall.png"];
+                        [button addSubview:locked];
+                        [locked release];
+                        
+                        
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                    else
+                    {
+                        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5 + 2 * i + 50 * i, 3, 40, 50)];
+                        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                            button.frame = CGRectMake(15 + 2 * i + 90 * i, 1, 80, 100);
+                        
+                        button.tag = i;
+                        [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i]] forState:UIControlStateNormal];
+                        [button addTarget:self action:@selector(backgroundChosen:) forControlEvents:UIControlEventTouchUpInside];
+                        [secondScroll addSubview:button];
+                        [button release];
+                    }
+                }
+            }
+            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+                secondScroll.contentSize = CGSizeMake(90 * 11 + 15 + 2 * 12 + 15, secondScroll.frame.size.height);
+            else
+                secondScroll.contentSize = CGSizeMake(50 * 11 + 5 + 2 * 12 + 5, secondScroll.frame.size.height);
+        }
+        
+        [UIView animateWithDuration:0.7 animations:^{
+            secondScroll.frame = CGRectMake(0, secondScroll.frame.origin.y, secondScroll.frame.size.width, secondScroll.frame.size.height);
+            greyImgView.frame = secondScroll.frame;
+        }];
+        
     }
     
-    [UIView animateWithDuration:0.7 animations:^{
-        secondScroll.frame = CGRectMake(0, secondScroll.frame.origin.y, secondScroll.frame.size.width, secondScroll.frame.size.height);
-        greyImgView.frame = secondScroll.frame;
-    }];
 }
 
 - (void)colorChosen:(UIButton*)sender
@@ -4120,6 +4162,14 @@
     }
 }
 
+//- (NSString*)hexCodeFromColor:(UIColor *)color {
+//    
+//    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
+//    [color getRed:&red green:&green blue:&blue alpha:&alpha];
+//    
+//    return [NSString stringWithFormat:@"#%02X%02X%02X", (int)(red * 255.0f), (int)(green * 255.0f), (int)(blue * 255.0f)];
+//}
+
 #pragma mark - Dealloc
 
 - (void)dealloc
@@ -4136,6 +4186,72 @@
     [changes5 release];
 
     [super dealloc];
+}
+
+#pragma mark - IBAction methods
+- (IBAction)btnClose_action:(UIButton *)sender {
+    
+    
+}
+
+- (IBAction)btnPurple_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnRed_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnBrown_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnBlue_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnSkyBlue_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnOrange_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnGreen_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnYellow_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnBlack_action:(UIButton *)sender {
+    
+
+    
+}
+
+- (IBAction)btnMagenta_action:(UIButton *)sender {
+    
+
+    
 }
 
 @end

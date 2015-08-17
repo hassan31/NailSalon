@@ -11,7 +11,7 @@
 @interface MenuViewController : UIViewController <UIAlertViewDelegate>
 {
     IBOutlet UIImageView *unlockSparkle;
-    
+
     int nr1;
     int nr2;
 }

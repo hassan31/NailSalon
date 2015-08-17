@@ -584,8 +584,6 @@
 		65FEB8BD173BD0720048E65D /* unlockSparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FEB8BC173BD0720048E65D /* unlockSparkle.png */; };
 		65FEB8BF173BD07F0048E65D /* unlockSparkle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FEB8BE173BD07F0048E65D /* unlockSparkle@2x.png */; };
 		C3FBAA361B7FF53C002A33EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA011B7FF53C002A33EA /* AppDelegate.m */; };
-		C3FBAA371B7FF53C002A33EA /* HFColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA051B7FF53C002A33EA /* HFColorButton.m */; };
-		C3FBAA381B7FF53C002A33EA /* HFColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA071B7FF53C002A33EA /* HFColorPickerView.m */; };
 		C3FBAA391B7FF53C002A33EA /* AlbumViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA0C1B7FF53C002A33EA /* AlbumViewController-5.xib */; };
 		C3FBAA3A1B7FF53C002A33EA /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA0E1B7FF53C002A33EA /* AlbumViewController.m */; };
 		C3FBAA3B1B7FF53C002A33EA /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA0F1B7FF53C002A33EA /* AlbumViewController.xib */; };
@@ -1200,10 +1198,6 @@
 		65FEB8BE173BD07F0048E65D /* unlockSparkle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlockSparkle@2x.png"; sourceTree = "<group>"; };
 		C3FBAA001B7FF53C002A33EA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3FBAA011B7FF53C002A33EA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3FBAA041B7FF53C002A33EA /* HFColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFColorButton.h; sourceTree = "<group>"; };
-		C3FBAA051B7FF53C002A33EA /* HFColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFColorButton.m; sourceTree = "<group>"; };
-		C3FBAA061B7FF53C002A33EA /* HFColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFColorPickerView.h; sourceTree = "<group>"; };
-		C3FBAA071B7FF53C002A33EA /* HFColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFColorPickerView.m; sourceTree = "<group>"; };
 		C3FBAA091B7FF53C002A33EA /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		C3FBAA0C1B7FF53C002A33EA /* AlbumViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AlbumViewController-5.xib"; sourceTree = "<group>"; };
 		C3FBAA0D1B7FF53C002A33EA /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
@@ -1367,8 +1361,8 @@
 		65708B251739815D00F5F784 /* NailSalon */ = {
 			isa = PBXGroup;
 			children = (
+				C366D3101B8016C700441FDA /* CustomClasses */,
 				C3FBA9FF1B7FF53C002A33EA /* AppDelegate */,
-				C3FBAA021B7FF53C002A33EA /* CustomClasses */,
 				C3FBAA081B7FF53C002A33EA /* Utils */,
 				C3FBAA0A1B7FF53C002A33EA /* ViewControllers */,
 				65708B261739815D00F5F784 /* Supporting Files */,
@@ -2235,6 +2229,14 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		C366D3101B8016C700441FDA /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomClasses;
+			path = nailsalon/CustomClasses;
+			sourceTree = SOURCE_ROOT;
+		};
 		C3FBA9FF1B7FF53C002A33EA /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -2244,26 +2246,6 @@
 			name = AppDelegate;
 			path = nailsalon/AppDelegate;
 			sourceTree = SOURCE_ROOT;
-		};
-		C3FBAA021B7FF53C002A33EA /* CustomClasses */ = {
-			isa = PBXGroup;
-			children = (
-				C3FBAA031B7FF53C002A33EA /* HFColorPicker */,
-			);
-			name = CustomClasses;
-			path = nailsalon/CustomClasses;
-			sourceTree = SOURCE_ROOT;
-		};
-		C3FBAA031B7FF53C002A33EA /* HFColorPicker */ = {
-			isa = PBXGroup;
-			children = (
-				C3FBAA041B7FF53C002A33EA /* HFColorButton.h */,
-				C3FBAA051B7FF53C002A33EA /* HFColorButton.m */,
-				C3FBAA061B7FF53C002A33EA /* HFColorPickerView.h */,
-				C3FBAA071B7FF53C002A33EA /* HFColorPickerView.m */,
-			);
-			path = HFColorPicker;
-			sourceTree = "<group>";
 		};
 		C3FBAA081B7FF53C002A33EA /* Utils */ = {
 			isa = PBXGroup;
@@ -2999,7 +2981,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FBAA381B7FF53C002A33EA /* HFColorPickerView.m in Sources */,
 				C3FBAA4D1B7FF53C002A33EA /* NailFinalViewController.m in Sources */,
 				C3FBAA3E1B7FF53C002A33EA /* MenuViewController.m in Sources */,
 				C3FBAA471B7FF53C002A33EA /* XmlParser.m in Sources */,
@@ -3008,7 +2989,6 @@
 				C3FBAA411B7FF53C002A33EA /* FreeAppOfTheDAy.m in Sources */,
 				C3FBAA441B7FF53C002A33EA /* MoreViewController.m in Sources */,
 				C3FBAA361B7FF53C002A33EA /* AppDelegate.m in Sources */,
-				C3FBAA371B7FF53C002A33EA /* HFColorButton.m in Sources */,
 				C3FBAA521B7FF53C002A33EA /* Reachability.m in Sources */,
 				65708B2C1739815D00F5F784 /* main.m in Sources */,
 				C3FBAA491B7FF53C002A33EA /* NailDecorateViewController.m in Sources */,

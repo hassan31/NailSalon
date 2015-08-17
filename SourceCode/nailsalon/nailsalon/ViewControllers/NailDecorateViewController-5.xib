@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="1280" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NailDecorateViewController">
             <connections>
                 <outlet property="background2ImgView" destination="4" id="167"/>
                 <outlet property="backgroundImgView" destination="51" id="166"/>
+                <outlet property="btnBlack" destination="Tie-LP-f1r" id="JSe-DH-nQp"/>
+                <outlet property="btnBlue" destination="RVU-b1-2fa" id="Kkh-j4-0a3"/>
+                <outlet property="btnBrown" destination="08y-oq-d2m" id="hGt-XZ-t5w"/>
+                <outlet property="btnClose" destination="Q7X-P1-Fmz" id="qil-aO-9w1"/>
+                <outlet property="btnGreen" destination="ceU-cz-eFc" id="PD0-Ww-fYl"/>
+                <outlet property="btnMagenta" destination="oPe-31-bFg" id="PeH-uU-0S4"/>
+                <outlet property="btnOrange" destination="FzL-hg-hkE" id="29S-p2-HgC"/>
+                <outlet property="btnPurple" destination="KkO-nu-gTF" id="aqu-FZ-SpW"/>
+                <outlet property="btnRed" destination="yNL-oR-M6c" id="zqs-Vb-LXH"/>
+                <outlet property="btnSkyBlue" destination="c3R-OB-AoR" id="1Ei-2F-y3E"/>
+                <outlet property="btnYellow" destination="PJA-pG-tKA" id="tW1-ih-ibF"/>
                 <outlet property="fingerImgView" destination="57" id="157"/>
                 <outlet property="greyImgView" destination="143" id="144"/>
                 <outlet property="handImgView" destination="5" id="158"/>
@@ -38,6 +49,7 @@
                 <outlet property="nail5Pattern" destination="98" id="102"/>
                 <outlet property="nail5Tip" destination="99" id="103"/>
                 <outlet property="nail5View" destination="15" id="16"/>
+                <outlet property="scrollViewColorPicker" destination="Awo-gb-FA5" id="EBb-08-x2B"/>
                 <outlet property="secondScroll" destination="68" id="112"/>
                 <outlet property="singleColor" destination="58" id="62"/>
                 <outlet property="singleFinger" destination="33" id="66"/>
@@ -310,6 +322,7 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
         <view contentMode="scaleToFill" id="33" userLabel="Finger">
@@ -322,7 +335,7 @@
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="149">
                     <rect key="frame" x="0.0" y="2" width="320" height="56"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="131" userLabel="Color Button">
                             <rect key="frame" x="13" y="5" width="46" height="46"/>
@@ -436,6 +449,22 @@
                                 <action selector="menuChosen:" destination="-1" eventType="touchUpInside" id="153"/>
                             </connections>
                         </button>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cPw-j6-JTQ" userLabel="Color Picker Button">
+                            <rect key="frame" x="432" y="5" width="46" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="background.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="background2.png"/>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="menuChosen:" destination="-1" eventType="touchUpInside" id="KTN-ZE-eVc"/>
+                            </connections>
+                        </button>
                     </subviews>
                 </scrollView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="finger1.png" id="57" userLabel="Finger">
@@ -531,8 +560,137 @@
                         <action selector="unlockEverythingClick:" destination="-1" eventType="touchUpInside" id="155"/>
                     </connections>
                 </button>
+                <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="Awo-gb-FA5">
+                    <rect key="frame" x="0.0" y="59" width="320" height="56"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q7X-P1-Fmz" userLabel="Close Button">
+                            <rect key="frame" x="16" y="12" width="33" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="cancel.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClose_action:" destination="-1" eventType="touchUpInside" id="gk3-iT-agz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KkO-nu-gTF" userLabel="Purple Button">
+                            <rect key="frame" x="65" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnPurple_action:" destination="-1" eventType="touchUpInside" id="ka8-wM-1bu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yNL-oR-M6c" userLabel="Red Button">
+                            <rect key="frame" x="110" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnRed_action:" destination="-1" eventType="touchUpInside" id="b0T-E0-n3X"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="08y-oq-d2m" userLabel="Brown Button">
+                            <rect key="frame" x="155" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnBrown_action:" destination="-1" eventType="touchUpInside" id="5dG-aC-tr9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RVU-b1-2fa" userLabel="Blue Button">
+                            <rect key="frame" x="200" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnBlue_action:" destination="-1" eventType="touchUpInside" id="SZI-f7-zb4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c3R-OB-AoR" userLabel="Sky Blue Button">
+                            <rect key="frame" x="245" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSkyBlue_action:" destination="-1" eventType="touchUpInside" id="X1j-Eq-6Gr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FzL-hg-hkE" userLabel="Orange Button">
+                            <rect key="frame" x="290" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnOrange_action:" destination="-1" eventType="touchUpInside" id="8uu-h4-lc2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ceU-cz-eFc" userLabel="Green Button">
+                            <rect key="frame" x="335" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnGreen_action:" destination="-1" eventType="touchUpInside" id="f1E-HP-2vE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PJA-pG-tKA" userLabel="Yellow Button">
+                            <rect key="frame" x="380" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnYellow_action:" destination="-1" eventType="touchUpInside" id="sf1-Nt-Att"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tie-LP-f1r" userLabel="Black Button">
+                            <rect key="frame" x="425" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnBlack_action:" destination="-1" eventType="touchUpInside" id="w5d-fT-dZ9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oPe-31-bFg" userLabel="Magenta Button">
+                            <rect key="frame" x="470" y="16" width="25" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnMagenta_action:" destination="-1" eventType="touchUpInside" id="6r9-1Y-Ols"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <inset key="contentInset" minX="0.0" minY="0.0" maxX="515" maxY="0.0"/>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
@@ -543,6 +701,7 @@
         <image name="back.png" width="70" height="70"/>
         <image name="background.png" width="50" height="50"/>
         <image name="background2.png" width="50" height="50"/>
+        <image name="cancel.png" width="33" height="32"/>
         <image name="extrass.png" width="50" height="50"/>
         <image name="extrass2.png" width="50" height="50"/>
         <image name="finger1.png" width="192" height="255"/>
@@ -565,4 +724,9 @@
         <image name="unlock.png" width="94" height="99"/>
         <image name="unlockSparkle.png" width="80" height="80"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
