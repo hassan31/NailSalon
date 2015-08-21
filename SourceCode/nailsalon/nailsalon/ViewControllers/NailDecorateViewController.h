@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NailDecorateViewController : UIViewController
+#import "CropImageViewController.h"
+
+@interface NailDecorateViewController : UIViewController <CropImageViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     IBOutlet UIImageView *handImgView;
     IBOutlet UIImageView *fingerImgView;
@@ -109,14 +111,18 @@
     NSMutableArray *extras3Array;
     NSMutableArray *extras4Array;
     NSMutableArray *extras5Array;
+    NSMutableArray *extras6Array;
+    
     NSMutableArray *changes1;
     NSMutableArray *changes2;
     NSMutableArray *changes3;
     NSMutableArray *changes4;
     NSMutableArray *changes5;
-    
-    NSArray *arrColorButtons;
+    NSMutableArray *changes6;
+
 }
+
+- (IBAction)btnGallery_action:(UIButton *)sender;
 
 - (IBAction)nailSelected:(UIButton*)sender;
 - (IBAction)backFromFinger:(id)sender;

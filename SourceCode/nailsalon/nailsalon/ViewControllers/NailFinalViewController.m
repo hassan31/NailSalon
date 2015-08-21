@@ -579,149 +579,285 @@
 }
 
 #pragma mark - Extras
-
 - (void)updateExtras
 {
-//    if(nailSelected == 1)
-//    {
-        for(UIView *view in [nail1Tip subviews])
-            [view removeFromSuperview];
+    //    if(nailSelected == 1)
+    //    {
+    for(UIView *view in [nail1Tip subviews])
+        [view removeFromSuperview];
+    
+    for(int i = 0; i < [extras1Array count]; i++)
+    {
+        UIImageView *label = [[UIImageView alloc] init];
         
-        for(int i = 0; i < [extras1Array count]; i++)
-        {
-            UIImageView *label = [[UIImageView alloc] init];
-            
-            CGRect frame = CGRectFromString([[extras1Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.1192;
-            frame.origin.y *= 0.1058;
-            frame.size.width *= 0.1192;
-            frame.size.height *= 0.1192;
-            
-            label.frame = frame;
-            
-            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras1Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
-            else
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras1Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
-            
-            label.tag = i + 1;
-            label.userInteractionEnabled = YES;
-            [nail1Tip addSubview:label];
-            [label release];
-        }
-//    }
-//    else if(nailSelected == 2)
-//    {
-        for(UIView *view in [nail2Tip subviews])
-            [view removeFromSuperview];
+        CGRect frame = CGRectFromString([[extras1Array objectAtIndex:i] objectForKey:@"frame"]);
         
-        for(int i = 0; i < [extras2Array count]; i++)
-        {
-            UIImageView *label = [[UIImageView alloc] init];
-            
-            CGRect frame = CGRectFromString([[extras2Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.1324;
-            frame.origin.y *= 0.1204;
-            frame.size.width *= 0.1324;
-            frame.size.height *= 0.1324;
-            
-            label.frame = frame;
-            
-            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras2Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
-            else
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras2Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
-            
-            label.tag = i + 1;
-            label.userInteractionEnabled = YES;
-            [nail2Tip addSubview:label];
-            [label release];
-        }
-//    }
-//    else if(nailSelected == 3)
-//    {
-        for(UIView *view in [nail3Tip subviews])
-            [view removeFromSuperview];
+        // Hassan
+        int tempTag = [[[extras1Array objectAtIndex:i] objectForKey:@"pic"] intValue];
         
-        for(int i = 0; i < [extras3Array count]; i++)
-        {
-            UIImageView *label = [[UIImageView alloc] init];
+        if (tempTag == 5000) {
             
-            CGRect frame = CGRectFromString([[extras3Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.1324;
-            frame.origin.y *= 0.124;
-            frame.size.width *= 0.1324;
-            frame.size.height *= 0.1324;
+            frame.origin.x      *= 0.05;
+            frame.origin.y      *= 0.05;
             
-            label.frame = frame;
+            frame.size.width    *= 0.2;
+            frame.size.height   *= 0.2;
             
-            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras3Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
-            else
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras3Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        } else {
             
-            label.tag = i + 1;
-            label.userInteractionEnabled = YES;
-            [nail3Tip addSubview:label];
-            [label release];
+            frame.origin.x      *= 0.1192;
+            frame.origin.y      *= 0.1058;
+            frame.size.width    *= 0.1192;
+            frame.size.height   *= 0.1192;
+            
         }
-//    }
-//    else if(nailSelected == 4)
-//    {
-        for(UIView *view in [nail4Tip subviews])
-            [view removeFromSuperview];
         
-        for(int i = 0; i < [extras4Array count]; i++)
-        {
-            UIImageView *label = [[UIImageView alloc] init];
-            
-            CGRect frame = CGRectFromString([[extras4Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.1324;
-            frame.origin.y *= 0.1204;
-            frame.size.width *= 0.1324;
-            frame.size.height *= 0.1324;
-            
-            label.frame = frame;
-            
-            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
-            else
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
-            
-            label.tag = i + 1;
-            label.userInteractionEnabled = YES;
-            [nail4Tip addSubview:label];
-            [label release];
-        }
-//    }
-//    else if(nailSelected == 5)
-//    {
-        for(UIView *view in [nail5Tip subviews])
-            [view removeFromSuperview];
+        label.frame = frame;
         
-        for(int i = 0; i < [extras5Array count]; i++)
-        {
-            UIImageView *label = [[UIImageView alloc] init];
+        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras1Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        
+        else
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras1Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        
+        if (tempTag == 5000) {
             
-            CGRect frame = CGRectFromString([[extras5Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.139;
-            frame.origin.y *= 0.124;
-            frame.size.width *= 0.139;
-            frame.size.height *= 0.139;
+            label.layer.cornerRadius 	= label.frame.size.width/2;
+            label.layer.masksToBounds   = true;
+            label.image                 = (UIImage *)[[extras1Array objectAtIndex:i] objectForKey:@"gallery_pic_1"];
             
-            label.frame = frame;
+        } else if (tempTag == 9000) {
             
-            if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras5Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
-            else
-                label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras5Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+            nail1Tip.backgroundColor = (UIColor *)[[extras1Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
             
-            label.tag = i + 1;
-            label.userInteractionEnabled = YES;
-            [nail5Tip addSubview:label];
-            [label release];
         }
-//    }
+        
+        label.tag = i + 1;
+        label.userInteractionEnabled = YES;
+        [nail1Tip addSubview:label];
+        [label release];
+    }
+    //    }
+    //    else if(nailSelected == 2)
+    //    {
+    for(UIView *view in [nail2Tip subviews])
+        [view removeFromSuperview];
+    
+    for(int i = 0; i < [extras2Array count]; i++)
+    {
+        UIImageView *label = [[UIImageView alloc] init];
+        
+        CGRect frame = CGRectFromString([[extras2Array objectAtIndex:i] objectForKey:@"frame"]);
+        
+        // Hassan
+        int tempTag = [[[extras2Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+        
+        if (tempTag == 5000) {
+            
+            frame.origin.x      *= 0.05;
+            frame.origin.y      *= 0.05;
+            
+            frame.size.width    *= 0.2;
+            frame.size.height   *= 0.2;
+            
+        } else {
+            
+            frame.origin.x      *= 0.1324;
+            frame.origin.y      *= 0.1204;
+            frame.size.width    *= 0.1324;
+            frame.size.height   *= 0.1324;
+            
+        }
+        
+        label.frame = frame;
+        
+        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras2Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        else
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras2Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        
+        if (tempTag == 5000) {
+            
+            label.layer.cornerRadius 	= label.frame.size.width/2;
+            label.layer.masksToBounds   = true;
+            label.image                 = (UIImage *)[[extras2Array objectAtIndex:i] objectForKey:@"gallery_pic_2"];
+            
+        } else if (tempTag == 9000) {
+            
+            nail2Tip.backgroundColor = (UIColor *)[[extras2Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+        }
+        
+        label.tag = i + 1;
+        label.userInteractionEnabled = YES;
+        [nail2Tip addSubview:label];
+        [label release];
+    }
+    //    }
+    //    else if(nailSelected == 3)
+    //    {
+    for(UIView *view in [nail3Tip subviews])
+        [view removeFromSuperview];
+    
+    for(int i = 0; i < [extras3Array count]; i++)
+    {
+        UIImageView *label = [[UIImageView alloc] init];
+        
+        CGRect frame = CGRectFromString([[extras3Array objectAtIndex:i] objectForKey:@"frame"]);
+        
+        // Hassan
+        int tempTag = [[[extras3Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+        
+        if (tempTag == 5000) {
+            
+            frame.origin.x      *= 0.05;
+            frame.origin.y      *= 0.05;
+            
+            frame.size.width    *= 0.2;
+            frame.size.height   *= 0.2;
+            
+        } else {
+            
+            frame.origin.x      *= 0.1324;
+            frame.origin.y      *= 0.124;
+            frame.size.width    *= 0.1324;
+            frame.size.height   *= 0.1324;
+            
+        }
+        
+        label.frame = frame;
+        
+        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras3Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        else
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras3Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        
+        if (tempTag == 5000) {
+            
+            label.layer.cornerRadius 	= label.frame.size.width/2;
+            label.layer.masksToBounds   = true;
+            label.image                 = (UIImage *)[[extras3Array objectAtIndex:i] objectForKey:@"gallery_pic_3"];
+            
+        } else if (tempTag == 9000) {
+            
+            nail3Tip.backgroundColor = (UIColor *)[[extras3Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+        }
+        
+        label.tag = i + 1;
+        label.userInteractionEnabled = YES;
+        [nail3Tip addSubview:label];
+        [label release];
+    }
+    //    }
+    //    else if(nailSelected == 4)
+    //    {
+    for(UIView *view in [nail4Tip subviews])
+        [view removeFromSuperview];
+    
+    for(int i = 0; i < [extras4Array count]; i++)
+    {
+        UIImageView *label = [[UIImageView alloc] init];
+        
+        CGRect frame = CGRectFromString([[extras4Array objectAtIndex:i] objectForKey:@"frame"]);
+        
+        // Hassan
+        int tempTag = [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+        
+        if (tempTag == 5000) {
+            
+            frame.origin.x      *= 0.05;
+            frame.origin.y      *= 0.05;
+            
+            frame.size.width    *= 0.2;
+            frame.size.height   *= 0.2;
+            
+        } else {
+            
+            frame.origin.x      *= 0.1324;
+            frame.origin.y      *= 0.1204;
+            frame.size.width    *= 0.1324;
+            frame.size.height   *= 0.1324;
+            
+        }
+        
+        label.frame = frame;
+        
+        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        else
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        
+        if (tempTag == 5000) {
+            
+            label.layer.cornerRadius 	= label.frame.size.width/2;
+            label.layer.masksToBounds   = true;
+            label.image                 = (UIImage *)[[extras4Array objectAtIndex:i] objectForKey:@"gallery_pic_4"];
+            
+        } else if (tempTag == 9000) {
+            
+            nail4Tip.backgroundColor = (UIColor *)[[extras4Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+        }
+        
+        label.tag = i + 1;
+        label.userInteractionEnabled = YES;
+        [nail4Tip addSubview:label];
+        [label release];
+    }
+    //    }
+    //    else if(nailSelected == 5)
+    //    {
+    for(UIView *view in [nail5Tip subviews])
+        [view removeFromSuperview];
+    
+    for(int i = 0; i < [extras5Array count]; i++)
+    {
+        UIImageView *label = [[UIImageView alloc] init];
+        
+        CGRect frame = CGRectFromString([[extras5Array objectAtIndex:i] objectForKey:@"frame"]);
+        
+        // Hassan
+        int tempTag = [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+        
+        if (tempTag == 5000) {
+            
+            frame.origin.x      *= 0.05;
+            frame.origin.y      *= 0.05;
+            
+            frame.size.width    *= 0.2;
+            frame.size.height   *= 0.2;
+            
+        } else {
+            
+            frame.origin.x      *= 0.139;
+            frame.origin.y      *= 0.124;
+            frame.size.width    *= 0.139;
+            frame.size.height   *= 0.139;
+            
+        }
+        
+        label.frame = frame;
+        
+        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras5Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        else
+            label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras5Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+        
+        if (tempTag == 5000) {
+            
+            label.layer.cornerRadius 	= label.frame.size.width/2;
+            label.layer.masksToBounds   = true;
+            label.image                 = (UIImage *)[[extras5Array objectAtIndex:i] objectForKey:@"gallery_pic_5"];
+            
+        } else if (tempTag == 9000) {
+            
+            nail5Tip.backgroundColor = (UIColor *)[[extras5Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+        }
+        
+        label.tag = i + 1;
+        label.userInteractionEnabled = YES;
+        [nail5Tip addSubview:label];
+        [label release];
+    }
+    //    }
 }
 
 - (void)addMaskToHoleView

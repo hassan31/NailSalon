@@ -60,14 +60,25 @@
     extras3Array = [[NSMutableArray alloc] init];
     extras4Array = [[NSMutableArray alloc] init];
     extras5Array = [[NSMutableArray alloc] init];
+    extras6Array = [[NSMutableArray alloc] init];
+    
     changes1 = [[NSMutableArray alloc] init];
     changes2 = [[NSMutableArray alloc] init];
     changes3 = [[NSMutableArray alloc] init];
     changes4 = [[NSMutableArray alloc] init];
     changes5 = [[NSMutableArray alloc] init];
+    changes6 = [[NSMutableArray alloc] init];
 
     [self addMaskToHoleView];
-    menuScroll.contentSize = CGSizeMake(490, menuScroll.frame.size.height);
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        
+        menuScroll.contentSize = CGSizeMake(885, menuScroll.frame.size.height);
+        
+    } else {
+        
+        menuScroll.contentSize = CGSizeMake(490, menuScroll.frame.size.height);
+        
+    }
     
     [self setUpColorPickerView];
 }
@@ -115,8 +126,6 @@
     btnMagenta.layer.cornerRadius   = btnMagenta.frame.size.width/2.0;
     btnPurple.layer.cornerRadius    = btnPurple.frame.size.width/2.0;
     btnBlue.layer.cornerRadius      = btnBlue.frame.size.width/2.0;
-    
-    arrColorButtons = @[btnPurple, btnRed, btnBrown, btnSkyBlue, btnOrange, btnBlue, btnBlack, btnYellow, btnMagenta, btnGreen];
     
 }
 
@@ -1803,7 +1812,6 @@
 }
 
 #pragma mark -
-
 - (IBAction)nailSelected:(UIButton*)sender
 {
     [(AppDelegate*)[[UIApplication sharedApplication] delegate] playSoundEffect:1];
@@ -3588,17 +3596,46 @@
             UIImageView *label = [[UIImageView alloc] init];
             
             CGRect frame = CGRectFromString([[extras1Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.1192;
-            frame.origin.y *= 0.1058;
-            frame.size.width *= 0.1192;
-            frame.size.height *= 0.1192;
+            
+            // Hassan
+            int tempTag = [[[extras1Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+            
+            if (tempTag == 5000) {
+
+                frame.origin.x      *= 0.05;
+                frame.origin.y      *= 0.05;
+                
+                frame.size.width    *= 0.2;
+                frame.size.height   *= 0.2;
+                
+            } else {
+        
+                frame.origin.x      *= 0.1192;
+                frame.origin.y      *= 0.1058;
+                frame.size.width    *= 0.1192;
+                frame.size.height   *= 0.1192;
+                
+            }
             
             label.frame = frame;
             
             if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras1Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+            
             else
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras1Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+            
+            if (tempTag == 5000) {
+                
+                label.layer.cornerRadius 	= label.frame.size.width/2;
+                label.layer.masksToBounds   = true;
+                label.image                 = (UIImage *)[[extras1Array objectAtIndex:i] objectForKey:@"gallery_pic_1"];
+                
+            } else if (tempTag == 9000) {
+
+                nail1Tip.backgroundColor = (UIColor *)[[extras1Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+                
+            }
             
             label.tag = i + 1;
             label.userInteractionEnabled = YES;
@@ -3616,10 +3653,26 @@
             UIImageView *label = [[UIImageView alloc] init];
             
             CGRect frame = CGRectFromString([[extras2Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.1324;
-            frame.origin.y *= 0.1204;
-            frame.size.width *= 0.1324;
-            frame.size.height *= 0.1324;
+            
+            // Hassan
+            int tempTag = [[[extras2Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+            
+            if (tempTag == 5000) {
+                
+                frame.origin.x      *= 0.05;
+                frame.origin.y      *= 0.05;
+                
+                frame.size.width    *= 0.2;
+                frame.size.height   *= 0.2;
+                
+            } else {
+                
+                frame.origin.x      *= 0.1324;
+                frame.origin.y      *= 0.1204;
+                frame.size.width    *= 0.1324;
+                frame.size.height   *= 0.1324;
+                
+            }
             
             label.frame = frame;
             
@@ -3627,6 +3680,17 @@
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras2Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
             else
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras2Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+            
+            if (tempTag == 5000) {
+                
+                label.layer.cornerRadius 	= label.frame.size.width/2;
+                label.layer.masksToBounds   = true;
+                label.image                 = (UIImage *)[[extras2Array objectAtIndex:i] objectForKey:@"gallery_pic_2"];
+                
+            } else if (tempTag == 9000) {
+                
+                nail2Tip.backgroundColor = (UIColor *)[[extras2Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+            }
             
             label.tag = i + 1;
             label.userInteractionEnabled = YES;
@@ -3644,10 +3708,26 @@
             UIImageView *label = [[UIImageView alloc] init];
             
             CGRect frame = CGRectFromString([[extras3Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.1324;
-            frame.origin.y *= 0.124;
-            frame.size.width *= 0.1324;
-            frame.size.height *= 0.1324;
+            
+            // Hassan
+            int tempTag = [[[extras3Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+            
+            if (tempTag == 5000) {
+                
+                frame.origin.x      *= 0.05;
+                frame.origin.y      *= 0.05;
+                
+                frame.size.width    *= 0.2;
+                frame.size.height   *= 0.2;
+                
+            } else {
+                
+                frame.origin.x      *= 0.1324;
+                frame.origin.y      *= 0.124;
+                frame.size.width    *= 0.1324;
+                frame.size.height   *= 0.1324;
+                
+            }
             
             label.frame = frame;
             
@@ -3655,6 +3735,17 @@
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras3Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
             else
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras3Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+            
+            if (tempTag == 5000) {
+                
+                label.layer.cornerRadius 	= label.frame.size.width/2;
+                label.layer.masksToBounds   = true;
+                label.image                 = (UIImage *)[[extras3Array objectAtIndex:i] objectForKey:@"gallery_pic_3"];
+                
+            } else if (tempTag == 9000) {
+                
+                nail3Tip.backgroundColor = (UIColor *)[[extras3Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+            }
             
             label.tag = i + 1;
             label.userInteractionEnabled = YES;
@@ -3672,10 +3763,26 @@
             UIImageView *label = [[UIImageView alloc] init];
             
             CGRect frame = CGRectFromString([[extras4Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.1324;
-            frame.origin.y *= 0.1204;
-            frame.size.width *= 0.1324;
-            frame.size.height *= 0.1324;
+            
+            // Hassan
+            int tempTag = [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+            
+            if (tempTag == 5000) {
+                
+                frame.origin.x      *= 0.05;
+                frame.origin.y      *= 0.05;
+                
+                frame.size.width    *= 0.2;
+                frame.size.height   *= 0.2;
+                
+            } else {
+                
+                frame.origin.x      *= 0.1324;
+                frame.origin.y      *= 0.1204;
+                frame.size.width    *= 0.1324;
+                frame.size.height   *= 0.1324;
+                
+            }
             
             label.frame = frame;
             
@@ -3683,6 +3790,17 @@
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
             else
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+            
+            if (tempTag == 5000) {
+                
+                label.layer.cornerRadius 	= label.frame.size.width/2;
+                label.layer.masksToBounds   = true;
+                label.image                 = (UIImage *)[[extras4Array objectAtIndex:i] objectForKey:@"gallery_pic_4"];
+                
+            } else if (tempTag == 9000) {
+                
+                nail4Tip.backgroundColor = (UIColor *)[[extras4Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+            }
             
             label.tag = i + 1;
             label.userInteractionEnabled = YES;
@@ -3700,10 +3818,26 @@
             UIImageView *label = [[UIImageView alloc] init];
             
             CGRect frame = CGRectFromString([[extras5Array objectAtIndex:i] objectForKey:@"frame"]);
-            frame.origin.x *= 0.139;
-            frame.origin.y *= 0.124;
-            frame.size.width *= 0.139;
-            frame.size.height *= 0.139;
+            
+            // Hassan
+            int tempTag = [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+            
+            if (tempTag == 5000) {
+                
+                frame.origin.x      *= 0.05;
+                frame.origin.y      *= 0.05;
+                
+                frame.size.width    *= 0.2;
+                frame.size.height   *= 0.2;
+                
+            } else {
+                
+                frame.origin.x      *= 0.139;
+                frame.origin.y      *= 0.124;
+                frame.size.width    *= 0.139;
+                frame.size.height   *= 0.139;
+                
+            }
             
             label.frame = frame;
             
@@ -3711,6 +3845,17 @@
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d@2x.png", [[[extras5Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
             else
                 label.image = [UIImage imageNamed:[NSString stringWithFormat:@"x%d.png", [[[extras5Array objectAtIndex:i] objectForKey:@"pic"] intValue]]];
+            
+            if (tempTag == 5000) {
+                
+                label.layer.cornerRadius 	= label.frame.size.width/2;
+                label.layer.masksToBounds   = true;
+                label.image                 = (UIImage *)[[extras5Array objectAtIndex:i] objectForKey:@"gallery_pic_5"];
+                
+            } else if (tempTag == 9000) {
+                
+                nail5Tip.backgroundColor = (UIColor *)[[extras5Array objectAtIndex:i] objectForKey:@"bg_nail_color"];
+            }
             
             label.tag = i + 1;
             label.userInteractionEnabled = YES;
@@ -4189,6 +4334,27 @@
 }
 
 #pragma mark - IBAction methods
+- (IBAction)btnGallery_action:(UIButton *)sender {
+    
+    __block UIImagePickerController *imgPickerVC;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum] == true) {
+            
+            imgPickerVC             = [[UIImagePickerController alloc] init];
+            imgPickerVC.delegate    = self;
+            
+            imgPickerVC.sourceType  = UIImagePickerControllerSourceTypePhotoLibrary;
+            
+            [self                   presentViewController:imgPickerVC animated:YES completion:nil];
+            
+        }
+        
+    });
+    
+}
+
 - (IBAction)btnClose_action:(UIButton *)sender {
     
     
@@ -4196,62 +4362,466 @@
 
 - (IBAction)btnPurple_action:(UIButton *)sender {
     
-
+    btnPurple.layer.borderColor     = [UIColor whiteColor].CGColor;
+    btnPurple.layer.borderWidth     = 2.0f;
+    
+    btnRed.layer.borderWidth        = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnBlack.layer.borderWidth      = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnRed_action:(UIButton *)sender {
     
-
+    btnRed.layer.borderColor        = [UIColor whiteColor].CGColor;
+    btnRed.layer.borderWidth        = 2.0f;
+    
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnBlack.layer.borderWidth      = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnBrown_action:(UIButton *)sender {
     
-
+    btnBrown.layer.borderColor      = [UIColor whiteColor].CGColor;
+    btnBrown.layer.borderWidth      = 2.0f;
+    
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnRed.layer.borderWidth        = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnBlack.layer.borderWidth      = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnBlue_action:(UIButton *)sender {
     
-
+    btnBlue.layer.borderColor       = [UIColor whiteColor].CGColor;
+    btnBlue.layer.borderWidth       = 2.0f;
+    
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnBlack.layer.borderWidth      = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnRed.layer.borderWidth        = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnSkyBlue_action:(UIButton *)sender {
-    
 
+    btnSkyBlue.layer.borderColor    = [UIColor whiteColor].CGColor;
+    btnSkyBlue.layer.borderWidth    = 2.0f;
+    
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnBlack.layer.borderWidth      = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnRed.layer.borderWidth        = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnOrange_action:(UIButton *)sender {
     
-
+    btnOrange.layer.borderColor     = [UIColor whiteColor].CGColor;
+    btnOrange.layer.borderWidth     = 2.0f;
+    
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnBlack.layer.borderWidth      = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnRed.layer.borderWidth        = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnGreen_action:(UIButton *)sender {
     
-
+    btnGreen.layer.borderColor      = [UIColor whiteColor].CGColor;
+    btnGreen.layer.borderWidth      = 2.0f;
+    
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnBlack.layer.borderWidth      = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnRed.layer.borderWidth        = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnYellow_action:(UIButton *)sender {
     
-
+    btnYellow.layer.borderColor     = [UIColor whiteColor].CGColor;
+    btnYellow.layer.borderWidth     = 2.0f;
+    
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnBlack.layer.borderWidth      = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnRed.layer.borderWidth        = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnBlack_action:(UIButton *)sender {
     
+    btnBlack.layer.borderColor      = [UIColor whiteColor].CGColor;
+    btnBlack.layer.borderWidth      = 2.0f;
+    
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnMagenta.layer.borderWidth    = 0.0f;
+    btnRed.layer.borderWidth        = 0.0f;
 
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
     
 }
 
 - (IBAction)btnMagenta_action:(UIButton *)sender {
     
-
+    btnMagenta.layer.borderColor      = [UIColor whiteColor].CGColor;
+    btnMagenta.layer.borderWidth      = 2.0f;
     
+    btnPurple.layer.borderWidth     = 0.0f;
+    btnBrown.layer.borderWidth      = 0.0f;
+    btnBlue.layer.borderWidth       = 0.0f;
+    btnSkyBlue.layer.borderWidth    = 0.0f;
+    btnOrange.layer.borderWidth     = 0.0f;
+    btnGreen.layer.borderWidth      = 0.0f;
+    btnYellow.layer.borderWidth     = 0.0f;
+    btnBlack.layer.borderWidth    = 0.0f;
+    btnRed.layer.borderWidth        = 0.0f;
+    
+    singleTip.image                 = nil;
+    singleTip.backgroundColor       = sender.backgroundColor;
+    
+    [self saveBackgroundColorOfNail:sender.backgroundColor];
+    
+}
+
+- (NSString *)hexStringForColor:(UIColor *)color {
+    
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    
+    CGFloat r = components[0];
+    CGFloat g = components[1];
+    CGFloat b = components[2];
+    
+    NSString *hexString = [NSString stringWithFormat:@"%02X%02X%02X", (int)(r * 255), (int)(g * 255), (int)(b * 255)];
+    
+    return hexString;
+}
+
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    
+    unsigned rgbValue = 0;
+    
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    
+    UIColor *color = [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+    
+    return color;
+}
+
+- (void)saveBackgroundColorOfNail:(UIColor *)color {
+    
+    if(nailSelected == 1)
+    {
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic"];
+        [md setObject:color forKey:@"bg_nail_color"];
+        [extras1Array addObject:md];
+        [md release];
+        
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic_nr"];
+        [changes1 addObject:md2];
+        [md2 release];
+        
+    }
+    else if(nailSelected == 2)
+    {
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic"];
+        [md setObject:color forKey:@"bg_nail_color"];
+        [extras2Array addObject:md];
+        [md release];
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic_nr"];
+        [changes2 addObject:md2];
+        [md2 release];
+    }
+    else if(nailSelected == 3)
+    {
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic"];
+        [md setObject:color forKey:@"bg_nail_color"];
+        [extras3Array addObject:md];
+        [md release];
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic_nr"];
+        [changes3 addObject:md2];
+        [md2 release];
+        
+    }
+    else if(nailSelected == 4)
+    {
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic"];
+        [md setObject:color forKey:@"bg_nail_color"];
+        [extras4Array addObject:md];
+        [md release];
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic_nr"];
+        [changes4 addObject:md2];
+        [md2 release];
+    }
+    else if(nailSelected == 5)
+    {
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic"];
+        [md setObject:color forKey:@"bg_nail_color"];
+        [extras5Array addObject:md];
+        [md release];
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 9000] forKey:@"pic_nr"];
+        [changes5 addObject:md2];
+        [md2 release];
+    }
+    
+}
+
+#pragma mark - UIImagePickerViewController delegate method
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^() {
+        
+        dispatch_async(dispatch_get_main_queue(), ^() {
+
+            [self dismissViewControllerAnimated:false completion:^{
+                
+                CropImageViewController *cropImageViewCont  = [[CropImageViewController alloc] initWithNibName:@"CropImageViewController" bundle:nil];
+                cropImageViewCont.delegate                  = self;
+                cropImageViewCont.imgSelected               = [info objectForKey:UIImagePickerControllerOriginalImage];
+                
+                [self presentViewController:cropImageViewCont animated:YES completion:^{
+                    
+                }];
+                
+            }];
+            
+        });
+        
+    });
+    
+}
+
+#pragma mar - CropImageViewController delegate method
+- (void)selectedImage:(UIImage *)orignalImage croppedImage:(UIImage *)croppedImage {
+    
+    [self imageChosen:croppedImage];
+}
+
+- (void)imageChosen:(UIImage *)sender
+{
+    UIImageView *label = [[UIImageView alloc] init];
+    UIImage *temp = sender;
+    label.frame = CGRectMake(CGRectGetWidth(singleTip.frame)/3.5, CGRectGetHeight(singleTip.frame)/1.5, 80.0, 80.0);
+    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        label.frame = CGRectMake(CGRectGetWidth(singleTip.frame)/3.8, CGRectGetHeight(singleTip.frame)/1.5, 150.0, 150.0);
+    }
+    
+    label.layer.cornerRadius    = label.frame.size.width/2;
+    label.layer.masksToBounds   = true;
+    label.image = temp;
+    
+    if(nailSelected == 1)
+    {
+        label.tag = [extras1Array count] + 1;
+        
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic"];
+        [md setObject:sender forKey:@"gallery_pic_1"];
+        [md setObject:NSStringFromCGRect(label.frame) forKey:@"frame"];
+        [extras1Array addObject:md];
+        [md release];
+        
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic_nr"];
+        [changes1 addObject:md2];
+        [md2 release];
+        
+    }
+    else if(nailSelected == 2)
+    {
+        label.tag = [extras2Array count] + 1;
+        
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic"];
+        [md setObject:sender forKey:@"gallery_pic_2"];
+        [md setObject:NSStringFromCGRect(label.frame) forKey:@"frame"];
+        [extras2Array addObject:md];
+        [md release];
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic_nr"];
+        [changes2 addObject:md2];
+        [md2 release];
+    }
+    else if(nailSelected == 3)
+    {
+        label.tag = [extras3Array count] + 1;
+        
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic"];
+        [md setObject:sender forKey:@"gallery_pic_3"];
+        [md setObject:NSStringFromCGRect(label.frame) forKey:@"frame"];
+        [extras3Array addObject:md];
+        [md release];
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic_nr"];
+        [changes3 addObject:md2];
+        [md2 release];
+        
+    }
+    else if(nailSelected == 4)
+    {
+        label.tag = [extras4Array count] + 1;
+        
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic"];
+        [md setObject:sender forKey:@"gallery_pic_4"];
+        [md setObject:NSStringFromCGRect(label.frame) forKey:@"frame"];
+        [extras4Array addObject:md];
+        [md release];
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic_nr"];
+        [changes4 addObject:md2];
+        [md2 release];
+    }
+    else if(nailSelected == 5)
+    {
+        label.tag = [extras5Array count] + 1;
+        
+        NSMutableDictionary *md = [[NSMutableDictionary alloc] init];
+        [md setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic"];
+        [md setObject:sender forKey:@"gallery_pic_5"];
+        [md setObject:NSStringFromCGRect(label.frame) forKey:@"frame"];
+        [extras5Array addObject:md];
+        [md release];
+        
+        NSMutableDictionary *md2 = [[NSMutableDictionary alloc] init];
+        [md2 setObject:@"extras" forKey:@"type"];
+        [md2 setObject:[NSString stringWithFormat:@"%d", 5000] forKey:@"pic_nr"];
+        [changes5 addObject:md2];
+        [md2 release];
+    }
+    
+    label.userInteractionEnabled = YES;
+    [singleTip addSubview:label];
+    [label release];
 }
 
 @end

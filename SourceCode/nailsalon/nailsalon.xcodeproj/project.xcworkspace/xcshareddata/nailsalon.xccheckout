@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6999814E-6FF3-4EAC-B772-359A40145CD5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>nailsalon</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>93E2DE70BF4D3A1827A2F50EA1E615DB77C7E152</key>
 		<string>https://github.com/hassan31/NailSalon.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SourceCode/nailsalon/nailsalon.xcodeproj/project.xcworkspace</string>
+	<string>SourceCode/nailsalon/nailsalon.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>93E2DE70BF4D3A1827A2F50EA1E615DB77C7E152</key>

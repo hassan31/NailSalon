@@ -583,6 +583,18 @@
 		65FEB8BB173BC79C0048E65D /* magic-chime-06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65FEB8B7173BC79C0048E65D /* magic-chime-06.mp3 */; };
 		65FEB8BD173BD0720048E65D /* unlockSparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FEB8BC173BD0720048E65D /* unlockSparkle.png */; };
 		65FEB8BF173BD07F0048E65D /* unlockSparkle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FEB8BE173BD07F0048E65D /* unlockSparkle@2x.png */; };
+		C3A1389E1B83A29A00281D61 /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A1389D1B83A29A00281D61 /* SPUserResizableView.m */; };
+		C3A138A21B83A30900281D61 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A138A11B83A30900281D61 /* CropImageViewController.m */; };
+		C3A138A41B83A32300281D61 /* CropImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A138A31B83A32300281D61 /* CropImageViewController.xib */; };
+		C3A138B51B83A8D700281D61 /* btn_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A138AD1B83A8D700281D61 /* btn_cross.png */; };
+		C3A138B61B83A8D700281D61 /* btn_cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A138AE1B83A8D700281D61 /* btn_cross@2x.png */; };
+		C3A138B71B83A8D700281D61 /* btn_cross@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A138AF1B83A8D700281D61 /* btn_cross@3x.png */; };
+		C3A138B81B83A8D700281D61 /* btn_gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A138B01B83A8D700281D61 /* btn_gallery.png */; };
+		C3A138B91B83A8D700281D61 /* btn_gallery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A138B11B83A8D700281D61 /* btn_gallery@2x.png */; };
+		C3A138BA1B83A8D700281D61 /* btn_gallery@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A138B21B83A8D700281D61 /* btn_gallery@3x.png */; };
+		C3A138BB1B83A8D700281D61 /* btn_gallery~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A138B31B83A8D700281D61 /* btn_gallery~ipad.png */; };
+		C3A138BC1B83A8D700281D61 /* btn_gallery~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A138B41B83A8D700281D61 /* btn_gallery~ipad@2x.png */; };
+		C3CE19891B85287E00753A8A /* CropImageViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CE19881B85287E00753A8A /* CropImageViewController~ipad.xib */; };
 		C3FBAA361B7FF53C002A33EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA011B7FF53C002A33EA /* AppDelegate.m */; };
 		C3FBAA391B7FF53C002A33EA /* AlbumViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBAA0C1B7FF53C002A33EA /* AlbumViewController-5.xib */; };
 		C3FBAA3A1B7FF53C002A33EA /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBAA0E1B7FF53C002A33EA /* AlbumViewController.m */; };
@@ -1196,6 +1208,20 @@
 		65FEB8B7173BC79C0048E65D /* magic-chime-06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "magic-chime-06.mp3"; sourceTree = "<group>"; };
 		65FEB8BC173BD0720048E65D /* unlockSparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlockSparkle.png; sourceTree = "<group>"; };
 		65FEB8BE173BD07F0048E65D /* unlockSparkle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlockSparkle@2x.png"; sourceTree = "<group>"; };
+		C3A1389C1B83A29A00281D61 /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUserResizableView.h; sourceTree = "<group>"; };
+		C3A1389D1B83A29A00281D61 /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUserResizableView.m; sourceTree = "<group>"; };
+		C3A138A01B83A30900281D61 /* CropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImageViewController.h; sourceTree = "<group>"; };
+		C3A138A11B83A30900281D61 /* CropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImageViewController.m; sourceTree = "<group>"; };
+		C3A138A31B83A32300281D61 /* CropImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CropImageViewController.xib; sourceTree = "<group>"; };
+		C3A138AD1B83A8D700281D61 /* btn_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_cross.png; sourceTree = "<group>"; };
+		C3A138AE1B83A8D700281D61 /* btn_cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_cross@2x.png"; sourceTree = "<group>"; };
+		C3A138AF1B83A8D700281D61 /* btn_cross@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_cross@3x.png"; sourceTree = "<group>"; };
+		C3A138B01B83A8D700281D61 /* btn_gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_gallery.png; sourceTree = "<group>"; };
+		C3A138B11B83A8D700281D61 /* btn_gallery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_gallery@2x.png"; sourceTree = "<group>"; };
+		C3A138B21B83A8D700281D61 /* btn_gallery@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_gallery@3x.png"; sourceTree = "<group>"; };
+		C3A138B31B83A8D700281D61 /* btn_gallery~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_gallery~ipad.png"; sourceTree = "<group>"; };
+		C3A138B41B83A8D700281D61 /* btn_gallery~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_gallery~ipad@2x.png"; sourceTree = "<group>"; };
+		C3CE19881B85287E00753A8A /* CropImageViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CropImageViewController~ipad.xib"; sourceTree = "<group>"; };
 		C3FBAA001B7FF53C002A33EA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3FBAA011B7FF53C002A33EA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C3FBAA091B7FF53C002A33EA /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
@@ -1398,14 +1424,15 @@
 		65708B42173982BA00F5F784 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28312AE91802E6C500FBE04A /* Privacy */,
-				650893D3173C1FCA00336485 /* More screen */,
-				65FE6639173A64F30067CD40 /* updates */,
 				65708B43173982E000F5F784 /* 3g */,
+				C3A138AC1B83A8D700281D61 /* Images */,
 				65708B78173982E000F5F784 /* ipad */,
 				65708B8C173982E000F5F784 /* iphone5 */,
+				650893D3173C1FCA00336485 /* More screen */,
 				65708B9F173982E000F5F784 /* nails */,
+				28312AE91802E6C500FBE04A /* Privacy */,
 				65708CF2173982E100F5F784 /* retina */,
+				65FE6639173A64F30067CD40 /* updates */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -2232,9 +2259,46 @@
 		C366D3101B8016C700441FDA /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				C3A1389B1B83A29A00281D61 /* SPUserResizableView */,
 			);
 			name = CustomClasses;
 			path = nailsalon/CustomClasses;
+			sourceTree = SOURCE_ROOT;
+		};
+		C3A1389B1B83A29A00281D61 /* SPUserResizableView */ = {
+			isa = PBXGroup;
+			children = (
+				C3A1389C1B83A29A00281D61 /* SPUserResizableView.h */,
+				C3A1389D1B83A29A00281D61 /* SPUserResizableView.m */,
+			);
+			path = SPUserResizableView;
+			sourceTree = "<group>";
+		};
+		C3A1389F1B83A30900281D61 /* CropImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C3A138A01B83A30900281D61 /* CropImageViewController.h */,
+				C3A138A11B83A30900281D61 /* CropImageViewController.m */,
+				C3A138A31B83A32300281D61 /* CropImageViewController.xib */,
+				C3CE19881B85287E00753A8A /* CropImageViewController~ipad.xib */,
+			);
+			path = CropImageViewController;
+			sourceTree = "<group>";
+		};
+		C3A138AC1B83A8D700281D61 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C3A138AD1B83A8D700281D61 /* btn_cross.png */,
+				C3A138AE1B83A8D700281D61 /* btn_cross@2x.png */,
+				C3A138AF1B83A8D700281D61 /* btn_cross@3x.png */,
+				C3A138B01B83A8D700281D61 /* btn_gallery.png */,
+				C3A138B11B83A8D700281D61 /* btn_gallery@2x.png */,
+				C3A138B21B83A8D700281D61 /* btn_gallery@3x.png */,
+				C3A138B31B83A8D700281D61 /* btn_gallery~ipad.png */,
+				C3A138B41B83A8D700281D61 /* btn_gallery~ipad@2x.png */,
+			);
+			name = Images;
+			path = nailsalon/resources/Images;
 			sourceTree = SOURCE_ROOT;
 		};
 		C3FBA9FF1B7FF53C002A33EA /* AppDelegate */ = {
@@ -2259,6 +2323,7 @@
 		C3FBAA0A1B7FF53C002A33EA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C3A1389F1B83A30900281D61 /* CropImageViewController */,
 				C3FBAA0B1B7FF53C002A33EA /* Album */,
 				C3FBAA111B7FF53C002A33EA /* MenuViewController-5.xib */,
 				C3FBAA121B7FF53C002A33EA /* MenuViewController.h */,
@@ -2394,10 +2459,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				65708B2A1739815D00F5F784 /* InfoPlist.strings in Resources */,
+				C3A138B51B83A8D700281D61 /* btn_cross.png in Resources */,
 				65708D27173982E100F5F784 /* back.png in Resources */,
 				65708D28173982E100F5F784 /* backgroundMenu.png in Resources */,
 				65708D29173982E100F5F784 /* 1.png in Resources */,
 				65708D2A173982E100F5F784 /* 10.png in Resources */,
+				C3CE19891B85287E00753A8A /* CropImageViewController~ipad.xib in Resources */,
 				65708D2B173982E100F5F784 /* 2.png in Resources */,
 				65708D2C173982E100F5F784 /* 3.png in Resources */,
 				65708D2D173982E100F5F784 /* 4.png in Resources */,
@@ -2427,6 +2494,7 @@
 				65708D44173982E100F5F784 /* x6.png in Resources */,
 				65708D45173982E100F5F784 /* x7.png in Resources */,
 				65708D46173982E100F5F784 /* x8.png in Resources */,
+				C3A138B81B83A8D700281D61 /* btn_gallery.png in Resources */,
 				65708D47173982E100F5F784 /* x9.png in Resources */,
 				65708D48173982E100F5F784 /* extrass.png in Resources */,
 				65708D4A173982E100F5F784 /* forw.png in Resources */,
@@ -2546,9 +2614,11 @@
 				65708DFF173982E100F5F784 /* nailT2.png in Resources */,
 				65708E00173982E100F5F784 /* nailT20.png in Resources */,
 				65708E01173982E100F5F784 /* nailT3.png in Resources */,
+				C3A138B61B83A8D700281D61 /* btn_cross@2x.png in Resources */,
 				65708E02173982E100F5F784 /* nailT4.png in Resources */,
 				65708E03173982E100F5F784 /* nailT5.png in Resources */,
 				65708E04173982E100F5F784 /* nailT6.png in Resources */,
+				C3A138B71B83A8D700281D61 /* btn_cross@3x.png in Resources */,
 				65708E05173982E100F5F784 /* nailT7.png in Resources */,
 				65708E06173982E100F5F784 /* nailT8.png in Resources */,
 				65708E07173982E100F5F784 /* nailT9.png in Resources */,
@@ -2557,6 +2627,7 @@
 				65708E1E173982E100F5F784 /* nailC12@2x.png in Resources */,
 				65708E1F173982E100F5F784 /* nailC13@2x.png in Resources */,
 				65708E20173982E100F5F784 /* nailC14@2x.png in Resources */,
+				C3A138A41B83A32300281D61 /* CropImageViewController.xib in Resources */,
 				28312AF31802E8DF00FBE04A /* Icon-76.png in Resources */,
 				65708E21173982E100F5F784 /* nailC15@2x.png in Resources */,
 				65708E22173982E100F5F784 /* nailC16@2x.png in Resources */,
@@ -2688,11 +2759,13 @@
 				65708FAA1739910500F5F784 /* smallnailC2@2x.png in Resources */,
 				65708FAB1739910500F5F784 /* smallnailC3@2x.png in Resources */,
 				65708FAC1739910500F5F784 /* smallnailC4@2x.png in Resources */,
+				C3A138B91B83A8D700281D61 /* btn_gallery@2x.png in Resources */,
 				65708FAD1739910500F5F784 /* smallnailC5@2x.png in Resources */,
 				65708FAE1739910500F5F784 /* smallnailC6@2x.png in Resources */,
 				65708FAF1739910500F5F784 /* smallnailC7@2x.png in Resources */,
 				65708FB01739910500F5F784 /* smallnailC8@2x.png in Resources */,
 				65708FB11739910500F5F784 /* smallnailC9@2x.png in Resources */,
+				C3A138BA1B83A8D700281D61 /* btn_gallery@3x.png in Resources */,
 				65708FB21739910500F5F784 /* smallnailC10@2x.png in Resources */,
 				65708FB31739910500F5F784 /* smallnailC11@2x.png in Resources */,
 				65708FB41739910500F5F784 /* smallnailC12@2x.png in Resources */,
@@ -2758,6 +2831,7 @@
 				657090291739917500F5F784 /* smallnailG9@2x.png in Resources */,
 				6570902A1739917500F5F784 /* smallnailG10@2x.png in Resources */,
 				6570902B1739917500F5F784 /* smallnailG11@2x.png in Resources */,
+				C3A138BB1B83A8D700281D61 /* btn_gallery~ipad.png in Resources */,
 				6570902C1739917500F5F784 /* smallnailG12@2x.png in Resources */,
 				6570902D1739917500F5F784 /* smallnailG13@2x.png in Resources */,
 				6570902E1739917500F5F784 /* smallnailG14@2x.png in Resources */,
@@ -2921,6 +2995,7 @@
 				65089407173C1FCA00336485 /* CollectThem.png in Resources */,
 				65089408173C1FCA00336485 /* CollectThem@2x.png in Resources */,
 				65089409173C1FCA00336485 /* CollectThem~ipad.png in Resources */,
+				C3A138BC1B83A8D700281D61 /* btn_gallery~ipad@2x.png in Resources */,
 				6508940A173C1FCA00336485 /* freeApp.png in Resources */,
 				6508940B173C1FCA00336485 /* freeApp@2x.png in Resources */,
 				6508940C173C1FCA00336485 /* freeApp~ipad.png in Resources */,
@@ -2985,10 +3060,12 @@
 				C3FBAA3E1B7FF53C002A33EA /* MenuViewController.m in Sources */,
 				C3FBAA471B7FF53C002A33EA /* XmlParser.m in Sources */,
 				C3FBAA501B7FF53C002A33EA /* PrivacyPolicy.m in Sources */,
+				C3A1389E1B83A29A00281D61 /* SPUserResizableView.m in Sources */,
 				C3FBAA3A1B7FF53C002A33EA /* AlbumViewController.m in Sources */,
 				C3FBAA411B7FF53C002A33EA /* FreeAppOfTheDAy.m in Sources */,
 				C3FBAA441B7FF53C002A33EA /* MoreViewController.m in Sources */,
 				C3FBAA361B7FF53C002A33EA /* AppDelegate.m in Sources */,
+				C3A138A21B83A30900281D61 /* CropImageViewController.m in Sources */,
 				C3FBAA521B7FF53C002A33EA /* Reachability.m in Sources */,
 				65708B2C1739815D00F5F784 /* main.m in Sources */,
 				C3FBAA491B7FF53C002A33EA /* NailDecorateViewController.m in Sources */,
