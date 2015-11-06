@@ -10,15 +10,17 @@
 #pragma mark - VIEW LIFE CYCLE
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     
-    if([[UIScreen mainScreen] bounds].size.height == 1024) {
-        
-        self = [super initWithNibName:@"CropImageViewController~ipad" bundle:nibBundleOrNil];
-        
-    } else {
-        
-        self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-        
-    }
+//    if([[UIScreen mainScreen] bounds].size.height == 1024) {
+//        
+//        self = [super initWithNibName:@"CropImageViewController~ipad" bundle:nibBundleOrNil];
+//        
+//    } else {
+//        
+//        self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//        
+//    }
+    
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
     if (self) {
         
@@ -41,6 +43,9 @@
 }
 
 - (void)setLayout {
+    
+    self.navigationItem.leftBarButtonItem   = [[UIBarButtonItem alloc] initWithCustomView:btnSave];
+    self.navigationItem.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithCustomView:btnClose];
     
     imgViewSelected.image           = imgSelected;
     
@@ -140,4 +145,9 @@
     return croppedImage;
 }
 
+- (void)dealloc {
+    [btnSave release];
+    [btnClose release];
+    [super dealloc];
+}
 @end

@@ -17,7 +17,9 @@
                                                             
     IBOutlet UIImageView    *imgViewSelected;
     SPUserResizableView     *userResizableView;
-    
+                                                            
+    IBOutlet UIButton       *btnSave;
+    IBOutlet UIButton       *btnClose;
 }
 
 @property (nonatomic, retain) UIImage *imgSelected;

@@ -603,12 +603,16 @@
             frame.size.width    *= 0.2;
             frame.size.height   *= 0.2;
             
+            label.userInteractionEnabled = NO;
+            
         } else {
             
             frame.origin.x      *= 0.1192;
             frame.origin.y      *= 0.1058;
             frame.size.width    *= 0.1192;
             frame.size.height   *= 0.1192;
+            
+            label.userInteractionEnabled = YES;
             
         }
         
@@ -633,7 +637,6 @@
         }
         
         label.tag = i + 1;
-        label.userInteractionEnabled = YES;
         [nail1Tip addSubview:label];
         [label release];
     }
@@ -660,12 +663,16 @@
             frame.size.width    *= 0.2;
             frame.size.height   *= 0.2;
             
+            label.userInteractionEnabled = NO;
+            
         } else {
             
             frame.origin.x      *= 0.1324;
             frame.origin.y      *= 0.1204;
             frame.size.width    *= 0.1324;
             frame.size.height   *= 0.1324;
+            
+            label.userInteractionEnabled = YES;
             
         }
         
@@ -688,7 +695,6 @@
         }
         
         label.tag = i + 1;
-        label.userInteractionEnabled = YES;
         [nail2Tip addSubview:label];
         [label release];
     }
@@ -715,12 +721,16 @@
             frame.size.width    *= 0.2;
             frame.size.height   *= 0.2;
             
+            label.userInteractionEnabled = NO;
+            
         } else {
             
             frame.origin.x      *= 0.1324;
             frame.origin.y      *= 0.124;
             frame.size.width    *= 0.1324;
             frame.size.height   *= 0.1324;
+            
+            label.userInteractionEnabled = YES;
             
         }
         
@@ -743,7 +753,6 @@
         }
         
         label.tag = i + 1;
-        label.userInteractionEnabled = YES;
         [nail3Tip addSubview:label];
         [label release];
     }
@@ -770,12 +779,16 @@
             frame.size.width    *= 0.2;
             frame.size.height   *= 0.2;
             
+            label.userInteractionEnabled = NO;
+            
         } else {
             
             frame.origin.x      *= 0.1324;
             frame.origin.y      *= 0.1204;
             frame.size.width    *= 0.1324;
             frame.size.height   *= 0.1324;
+            
+            label.userInteractionEnabled = YES;
             
         }
         
@@ -798,7 +811,6 @@
         }
         
         label.tag = i + 1;
-        label.userInteractionEnabled = YES;
         [nail4Tip addSubview:label];
         [label release];
     }
@@ -815,7 +827,7 @@
         CGRect frame = CGRectFromString([[extras5Array objectAtIndex:i] objectForKey:@"frame"]);
         
         // Hassan
-        int tempTag = [[[extras4Array objectAtIndex:i] objectForKey:@"pic"] intValue];
+        int tempTag = [[[extras5Array objectAtIndex:i] objectForKey:@"pic"] intValue];
         
         if (tempTag == 5000) {
             
@@ -825,12 +837,16 @@
             frame.size.width    *= 0.2;
             frame.size.height   *= 0.2;
             
+            label.userInteractionEnabled = NO;
+            
         } else {
             
             frame.origin.x      *= 0.139;
             frame.origin.y      *= 0.124;
             frame.size.width    *= 0.139;
             frame.size.height   *= 0.139;
+            
+            label.userInteractionEnabled = YES;
             
         }
         
@@ -853,7 +869,6 @@
         }
         
         label.tag = i + 1;
-        label.userInteractionEnabled = YES;
         [nail5Tip addSubview:label];
         [label release];
     }

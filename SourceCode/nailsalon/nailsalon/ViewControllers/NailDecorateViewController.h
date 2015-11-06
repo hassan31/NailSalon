@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "FinalSingleNailVC.h"
 #import "CropImageViewController.h"
 
-@interface NailDecorateViewController : UIViewController <CropImageViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface NailDecorateViewController : UIViewController <CropImageViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 {
     IBOutlet UIImageView *handImgView;
     IBOutlet UIImageView *fingerImgView;
@@ -29,16 +30,16 @@
     
     // Color buttons
     IBOutlet UIButton *btnClose;
-    IBOutlet UIButton *btnPurple;
-    IBOutlet UIButton *btnRed;
-    IBOutlet UIButton *btnBrown;
-    IBOutlet UIButton *btnBlue;
-    IBOutlet UIButton *btnSkyBlue;
-    IBOutlet UIButton *btnOrange;
-    IBOutlet UIButton *btnGreen;
-    IBOutlet UIButton *btnYellow;
-    IBOutlet UIButton *btnBlack;
-    IBOutlet UIButton *btnMagenta;
+    IBOutlet UIButton *btnFrame1;
+    IBOutlet UIButton *btnFrame2;
+    IBOutlet UIButton *btnFrame3;
+    IBOutlet UIButton *btnFrame4;
+    IBOutlet UIButton *btnFrame5;
+    IBOutlet UIButton *btnFrame6;
+    IBOutlet UIButton *btnFrame7;
+    IBOutlet UIButton *btnFrame8;
+    IBOutlet UIButton *btnFrame9;
+    IBOutlet UIButton *btnFrame10;
     
     IBOutlet UIImageView *nail1Color;
     IBOutlet UIImageView *nail1Gloss;
@@ -78,6 +79,14 @@
     IBOutlet UIButton *unlockEv1;
     IBOutlet UIButton *unlockEv2;
     
+    IBOutlet UIButton *btnFinalSingleNail;
+    CGFloat _lastScale;
+    CGFloat _lastRotation;
+    CGFloat _firstX;
+    CGFloat _firstY;
+    
+    UIImageView *photoImage;
+    
     int nailSelected;
     int lastAccessory;
     
@@ -105,6 +114,7 @@
     int background;
     
     BOOL isActive;
+    BOOL isImageSelectedFromGallery;
     
     NSMutableArray *extras1Array;
     NSMutableArray *extras2Array;
@@ -122,6 +132,8 @@
 
 }
 
+@property (nonatomic, strong) UIImage *img;
+
 - (IBAction)btnGallery_action:(UIButton *)sender;
 
 - (IBAction)nailSelected:(UIButton*)sender;
@@ -135,15 +147,17 @@
 
 // Color Actions
 - (IBAction)btnClose_action:(UIButton *)sender;
-- (IBAction)btnPurple_action:(UIButton *)sender;
-- (IBAction)btnRed_action:(UIButton *)sender;
-- (IBAction)btnBrown_action:(UIButton *)sender;
-- (IBAction)btnBlue_action:(UIButton *)sender;
-- (IBAction)btnSkyBlue_action:(UIButton *)sender;
-- (IBAction)btnOrange_action:(UIButton *)sender;
-- (IBAction)btnGreen_action:(UIButton *)sender;
-- (IBAction)btnYellow_action:(UIButton *)sender;
-- (IBAction)btnBlack_action:(UIButton *)sender;
-- (IBAction)btnMagenta_action:(UIButton *)sender;
+- (IBAction)btnFrame1_action:(UIButton *)sender;
+- (IBAction)btnFrame2_action:(UIButton *)sender;
+- (IBAction)btnFrame3_action:(UIButton *)sender;
+- (IBAction)btnFrame4_action:(UIButton *)sender;
+- (IBAction)btnFrame5_action:(UIButton *)sender;
+- (IBAction)btnFrame6_action:(UIButton *)sender;
+- (IBAction)btnFrame7_action:(UIButton *)sender;
+- (IBAction)btnFrame8_action:(UIButton *)sender;
+- (IBAction)btnFrame9_action:(UIButton *)sender;
+- (IBAction)btnFrame10_action:(UIButton *)sender;
+
+- (IBAction)btnFinalSingleNail_action:(UIButton *)sender;
 
 @end
